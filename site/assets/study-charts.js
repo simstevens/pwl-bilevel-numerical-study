@@ -280,6 +280,19 @@
     window.addEventListener("resize", fit);
   }
 
+  // On narrow screens (phones), legends go below the plot, so that the plot
+  // can use the full width. Wider screens keep the legends on the right.
+  var NARROW_SCREEN = "(max-width: 700px)";
+
+  function legendsBelow(spec) {
+    spec.config = spec.config || {};
+    // Several legends are stacked (Vega's legend layout), each with two columns.
+    spec.config.legend = Object.assign({}, spec.config.legend, {
+      orient: "bottom", direction: "vertical", columns: 2,
+      layout: { bottom: { anchor: "start", direction: "vertical", margin: 12 } }
+    });
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     document.querySelectorAll("div.study-method-panel").forEach(buildPanel);
     renderCharts();
@@ -295,6 +308,7 @@
         return;
       }
       var spec = JSON.parse(text);
+      if (window.matchMedia(NARROW_SCREEN).matches) legendsBelow(spec);
       var options = { actions: false, renderer: "svg" };
       if (window.StudyBase.base()) options.loader = { baseURL: window.StudyBase.base() };
       vegaEmbed(container, spec, options)

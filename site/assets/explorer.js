@@ -18,6 +18,12 @@
     return "limit_none";
   }
 
+  // Short set names for the table cells, as in the paper ("KI, integer");
+  // the filter and the CSV export keep the full names.
+  function shortSet(label) {
+    return String(label).replace("Knapsack interdiction", "KI").replace(" leader", "");
+  }
+
   function element(tag, attributes, text) {
     var node = document.createElement(tag);
     Object.keys(attributes || {}).forEach(function (key) { node.setAttribute(key, attributes[key]); });
@@ -110,7 +116,10 @@
       var body = element("tbody");
       selection.forEach(function (row) {
         var line = element("tr");
-        ["set", "instance", "size", "q", "p"].forEach(function (column) { line.appendChild(element("td", {}, row[column] === null ? "–" : String(row[column]))); });
+        ["set", "instance", "size", "q", "p"].forEach(function (column) {
+          var value = row[column] === null ? "–" : String(row[column]);
+          line.appendChild(element("td", {}, column === "set" ? shortSet(value) : value));
+        });
         methods.forEach(function (method) {
           var task = row.tasks[method];
           if (!task) { line.appendChild(element("td", { class: "missing" }, "")); return; }

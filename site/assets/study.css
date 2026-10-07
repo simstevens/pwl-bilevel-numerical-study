@@ -3,7 +3,7 @@
 .study-chart .vega-bindings { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 1rem; }
 .study-chart .vega-bind-name { font-weight: 600; margin-right: 0.4rem; font-size: 0.85rem; }
 .study-chart .vega-bind select, .study-chart .vega-bind input { font-size: 0.8rem; }
-.study-chart-downloads { display: flex; gap: 0.5rem; margin: -1.2rem 0 2rem 0; }
+.study-chart-downloads { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: -1.2rem 0 2rem 0; }
 .study-chart-downloads .md-button { padding: 0.1rem 0.7rem; font-size: 0.7rem; }
 .study-explorer-controls { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; margin-bottom: 0.8rem; }
 .study-explorer-controls input[type="search"] { padding: 0.2rem 0.4rem; min-width: 14rem; }
@@ -17,7 +17,7 @@
 .study-explorer-table .outcome-infeasible, .study-explorer-table .outcome-limit_none { color: #666; }
 .md-typeset .study-sortable table th { cursor: pointer; }
 .study-method-panel { border: 1px solid var(--md-default-fg-color--lightest); border-radius: 0.2rem; padding: 0.6rem 0.8rem; margin: 1rem 0; }
-.study-method-buttons { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; }
+.study-method-buttons { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; }
 .study-method-buttons .md-button { padding: 0.1rem 0.7rem; font-size: 0.7rem; }
 /* Use the full screen width; tables scroll only when they really do not fit. */
 .md-grid { max-width: none; }
@@ -31,3 +31,10 @@
 .study-tikz-status { font-size: 0.7rem; color: var(--md-default-fg-color--light); align-self: center; }
 /* A growing chart scrolls on narrow screens instead of shrinking its fonts. */
 .study-chart[data-grow] svg { max-width: none; }
+/* Phones: every chart keeps its size and scrolls sideways instead of shrinking
+   to unreadable fonts; wider screens scale fixed-size charts to fit. */
+@media (max-width: 700px) {
+  .study-chart svg { max-width: none; }
+}
+/* Method names in the result tables stay on one line; the table scrolls. */
+.md-typeset .study-sortable td:first-child { white-space: nowrap; }
