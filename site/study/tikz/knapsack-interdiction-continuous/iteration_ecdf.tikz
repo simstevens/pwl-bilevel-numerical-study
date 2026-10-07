@@ -1,0 +1,85 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \definecolor{methodiomallssd}{RGB}{76,114,176}
+  \definecolor{methodiomallasd}{RGB}{221,132,82}
+  \definecolor{methodiomallkktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomallkktsos1}{RGB}{85,168,104}
+  \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
+  \definecolor{methodiomtop1asd}{RGB}{221,132,82}
+  \definecolor{methodiomtop1kktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomtop1kktsos1}{RGB}{85,168,104}
+  \begin{axis}[
+    width=0.85\textwidth,
+    height=.52\textwidth,
+    xlabel={Iterations},
+    ylabel={Solved instances (\%)},
+    tick align=outside,
+    axis lines=left,
+    axis line style={black, line width=0.5pt},
+    grid=both,
+    major grid style={draw=black!8, line width=0.5pt},
+    minor grid style={draw=black!8, line width=0.3pt},
+    tick style={black, line width=0.5pt},
+    tick label style={font=\footnotesize},
+    label style={font=\footnotesize},
+    every axis plot/.append style={line join=round},
+    legend style={draw=none, font=\footnotesize},
+    legend cell align={left},
+    clip marker paths=true,
+    enlarge y limits=0.05,
+    xmax=10,
+    xmin=0,
+    ymin=0,
+    ymax=102,
+    ytick={0,25,50,75,100},
+    xtick={0,1,2,3,4,5,6,7,8,9,10},
+  ]
+% begin method IOM-All_(SSD)
+  \addplot+[color=methodiomallssd, dotted, very thick, const plot, no marks] coordinates {(1.9047619,0) (2,0.55555556) (2,1.1111111) (2,1.6666667) (2,2.2222222) (2,2.7777778) (2,3.3333333) (2,3.8888889) (2,4.4444444) (2,5) (2,5.5555556) (2,6.1111111) (2,6.6666667) (2,7.2222222) (2,7.7777778) (2,8.3333333) (2,8.8888889) (2,9.4444444) (2,10) (2,10.555556) (3,11.111111) (3,11.666667) (3,12.222222) (3,12.777778) (3,13.333333) (3,13.888889) (3,14.444444) (3,15) (3,15.555556) (3,16.111111) (3,16.666667) (3,17.222222) (3,17.777778) (3,18.333333) (3,18.888889) (3,19.444444) (3,20) (3,20.555556) (3,21.111111) (3,21.666667) (3,22.222222) (3,22.777778) (3,23.333333) (3,23.888889) (3,24.444444) (3,25) (3,25.555556) (3,26.111111) (3,26.666667) (3,27.222222) (3,27.777778) (4,28.333333) (4,28.888889) (4,29.444444) (4,30) (4,30.555556) (4,31.111111) (4,31.666667) (4,32.222222) (4,32.777778) (5,33.333333) (5,33.888889) (5,34.444444) (5,35) (5,35.555556) (5,36.111111) (5,36.666667) (5,36.666667) (10,36.666667)};
+% end method IOM-All_(SSD)
+% begin method IOM-All_(ASD)
+  \addplot+[color=methodiomallasd, dotted, very thick, const plot, no marks] coordinates {(1.9047619,0) (2,0.55555556) (2,1.1111111) (2,1.6666667) (2,2.2222222) (2,2.7777778) (2,3.3333333) (2,3.8888889) (2,4.4444444) (3,5) (3,5.5555556) (3,6.1111111) (3,6.6666667) (4,7.2222222) (4,7.7777778) (5,8.3333333) (5,8.3333333) (10,8.3333333)};
+% end method IOM-All_(ASD)
+% begin method IOM-All_(KKT-McC)
+  \addplot+[color=methodiomallkktmcc, dotted, very thick, const plot, no marks] coordinates {(1.9047619,0) (2,0.55555556) (3,1.1111111) (3,1.6666667) (3,2.2222222) (3,2.7777778) (3,3.3333333) (3,3.8888889) (3,4.4444444) (3,5) (4,5.5555556) (4,6.1111111) (5,6.6666667) (5,6.6666667) (10,6.6666667)};
+% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-SOS1)
+  \addplot+[color=methodiomallkktsos1, dotted, very thick, const plot, no marks] coordinates {(0.95238095,0) (1,0.55555556) (2,1.1111111) (3,1.6666667) (3,2.2222222) (3,2.7777778) (3,3.3333333) (5,3.8888889) (5,3.8888889) (10,3.8888889)};
+% end method IOM-All_(KKT-SOS1)
+% begin method IOM-Top1_(SSD)
+  \addplot+[color=methodiomtop1ssd, dash dot, very thick, const plot, no marks] coordinates {(1.9047619,0) (2,0.55555556) (2,1.1111111) (2,1.6666667) (2,2.2222222) (2,2.7777778) (2,3.3333333) (3,3.8888889) (3,4.4444444) (3,5) (3,5.5555556) (3,6.1111111) (3,6.6666667) (3,7.2222222) (3,7.7777778) (3,8.3333333) (3,8.8888889) (3,9.4444444) (3,10) (3,10.555556) (3,11.111111) (3,11.666667) (3,12.222222) (4,12.777778) (4,13.333333) (4,13.888889) (4,14.444444) (4,15) (4,15.555556) (4,16.111111) (4,16.666667) (4,17.222222) (4,17.777778) (4,18.333333) (5,18.888889) (5,19.444444) (5,20) (5,20.555556) (5,21.111111) (5,21.666667) (5,22.222222) (5,22.777778) (5,23.333333) (6,23.888889) (6,24.444444) (6,25) (6,25.555556) (6,26.111111) (7,26.666667) (7,27.222222) (7,27.777778) (7,28.333333) (7,28.888889) (8,29.444444) (8,30) (9,30.555556) (10,30.555556)};
+% end method IOM-Top1_(SSD)
+% begin method IOM-Top1_(ASD)
+  \addplot+[color=methodiomtop1asd, dash dot, very thick, const plot, no marks] coordinates {(1.9047619,0) (2,0.55555556) (2,1.1111111) (2,1.6666667) (3,2.2222222) (3,2.7777778) (3,3.3333333) (3,3.8888889) (4,4.4444444) (4,5) (4,5.5555556) (4,6.1111111) (5,6.6666667) (5,7.2222222) (7,7.7777778) (8,7.7777778) (10,7.7777778)};
+% end method IOM-Top1_(ASD)
+% begin method IOM-Top1_(KKT-McC)
+  \addplot+[color=methodiomtop1kktmcc, dash dot, very thick, const plot, no marks] coordinates {(2.8571429,0) (3,0.55555556) (3,1.1111111) (3,1.6666667) (3,2.2222222) (3,2.7777778) (4,3.3333333) (5,3.8888889) (5,4.4444444) (6,5) (6,5.5555556) (7,6.1111111) (8,6.1111111) (10,6.1111111)};
+% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-SOS1)
+  \addplot+[color=methodiomtop1kktsos1, dash dot, very thick, const plot, no marks] coordinates {(0.95238095,0) (1,0.55555556) (3,1.1111111) (3,1.6666667) (3,2.2222222) (5,2.7777778) (5,3.3333333) (7,3.8888889) (7,3.8888889) (10,3.8888889)};
+% end method IOM-Top1_(KKT-SOS1)
+% begin method IOM-All_(SSD)
+  \node[text=methodiomallssd,anchor=north west,font=\small] at (rel axis cs:0.03,0.88) {66/180};
+% end method IOM-All_(SSD)
+% begin method IOM-All_(ASD)
+  \node[text=methodiomallasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.8) {15/180};
+% end method IOM-All_(ASD)
+% begin method IOM-All_(KKT-McC)
+  \node[text=methodiomallkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.72) {12/180};
+% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-SOS1)
+  \node[text=methodiomallkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.64) {7/180};
+% end method IOM-All_(KKT-SOS1)
+% begin method IOM-Top1_(SSD)
+  \node[text=methodiomtop1ssd,anchor=north west,font=\small] at (rel axis cs:0.03,0.56) {55/180};
+% end method IOM-Top1_(SSD)
+% begin method IOM-Top1_(ASD)
+  \node[text=methodiomtop1asd,anchor=north west,font=\small] at (rel axis cs:0.03,0.48) {14/180};
+% end method IOM-Top1_(ASD)
+% begin method IOM-Top1_(KKT-McC)
+  \node[text=methodiomtop1kktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.4) {11/180};
+% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-SOS1)
+  \node[text=methodiomtop1kktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.32) {7/180};
+% end method IOM-Top1_(KKT-SOS1)
+  \end{axis}
+\end{tikzpicture}

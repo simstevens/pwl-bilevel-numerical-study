@@ -1,0 +1,77 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \definecolor{methodcbssd}{RGB}{76,114,176}
+  \definecolor{methodcbasd}{RGB}{221,132,82}
+  \definecolor{methodcbkktsos1}{RGB}{85,168,104}
+  \definecolor{methodssd}{RGB}{76,114,176}
+  \definecolor{methodasd}{RGB}{221,132,82}
+  \definecolor{methodkktmcc}{RGB}{196,78,82}
+  \definecolor{methodkktsos1}{RGB}{85,168,104}
+  \definecolor{methodiomallssd}{RGB}{76,114,176}
+  \definecolor{methodiomallasd}{RGB}{221,132,82}
+  \definecolor{methodiomallkktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomallkktsos1}{RGB}{85,168,104}
+  \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
+  \definecolor{methodiomtop1asd}{RGB}{221,132,82}
+  \definecolor{methodiomtop1kktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomtop1kktsos1}{RGB}{85,168,104}
+  \definecolor{methodiomallmibs}{RGB}{129,114,179}
+  \definecolor{methodiomtop1mibs}{RGB}{129,114,179}
+  \begin{axis}[
+    width=0.85\textwidth,
+    height=.52\textwidth,
+    xlabel={Regional assignments},
+    ylabel={Final optimality gap (\%)},
+    tick align=outside,
+    axis lines=left,
+    axis line style={black, line width=0.5pt},
+    grid=both,
+    major grid style={draw=black!8, line width=0.5pt},
+    minor grid style={draw=black!8, line width=0.3pt},
+    tick style={black, line width=0.5pt},
+    tick label style={font=\footnotesize},
+    label style={font=\footnotesize},
+    every axis plot/.append style={line join=round},
+    legend style={draw=none, font=\footnotesize},
+    legend cell align={left},
+    clip marker paths=true,
+    enlarge y limits=0.05,
+    xmode=log,
+    enlarge x limits={lower=0.025,upper=0.05},
+    log basis x=2,
+  ]
+  \addplot+[only marks, mark=pentagon*, mark size=1.5pt, mark size=1.3pt, color=methodcbssd, opacity=0.4, forget plot] coordinates {(64,138.65407) (64,49.608187) (64,272.54186) (64,63.81103) (64,64.002491) (64,64.476893) (64,65.089098) (64,141.27322) (256,81.782065) (256,276.13899) (256,44.239817) (256,182.13405) (256,180.09276) (512,348.32913) (512,386.55811) (512,109.33529) (512,184.9601) (512,82.845645) (512,276.36795) (4096,426.39377) (4096,707.6002) (4096,200.53289) (4096,344.60078) (4096,640.53515)};
+  \addplot+[color=methodcbssd, dashed, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(64,64.782996) (256,180.09276) (512,230.66402) (4096,426.39377)};
+  \addplot+[only marks, mark=star, mark size=1.5pt, mark size=1.3pt, color=methodcbasd, opacity=0.4, forget plot] coordinates {(16,50.483329) (64,54.709805) (64,117.46123) (64,148.41644) (64,63.925599) (64,106.95969) (64,274.07505) (64,35.205394) (64,204.59589) (64,106.27188) (64,149.51685) (256,356.40622) (256,61.968641) (256,36.340412) (256,182.36106) (256,13.012231) (256,94.820408) (256,125.31386) (512,349.65971) (512,320.94765) (512,328.29879) (512,114.51982) (512,416.07077) (512,138.05232) (512,245.62365) (512,375.06517) (4096,51.927978) (4096,40.10989) (4096,1732.1607) (4096,74.65862) (4096,696.23325) (4096,111.29412) (4096,627.73018)};
+  \addplot+[color=methodcbasd, dashed, very thick, mark=star, mark size=1.5pt] coordinates {(16,50.483329) (64,112.21046) (256,94.820408) (512,324.62322) (4096,111.29412)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}, mark size=1.3pt, color=methodcbkktsos1, opacity=0.4, forget plot] coordinates {(256,1515.262) (256,32.756212) (512,475.89549)};
+  \addplot+[color=methodcbkktsos1, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}] coordinates {(256,774.0091) (512,475.89549)};
+  \addplot+[only marks, mark=*, mark size=1.5pt, mark size=1.3pt, color=methodssd, opacity=0.4, forget plot] coordinates {(8,57.229248) (16,42.49654) (16,287.28544) (16,64.555841) (16,64.323676) (64,149.14948) (64,275.27846) (64,216.36365) (64,368.80645) (64,121.32118) (64,260.69407) (64,111.69102) (64,163.9832) (64,150.04371) (64,202.58375) (64,239.69356) (64,385.75146) (64,142.18642) (64,72.888511) (64,183.57271) (64,414.21436) (256,199.40625) (256,283.46692) (256,207.43495) (256,1512.5448) (256,216.91125) (256,837.96491) (256,182.35897) (512,152.35128) (512,434.47245) (512,44.859702) (512,191.74893) (4096,95.601984) (4096,56.35512)};
+  \addplot+[color=methodssd, solid, very thick, mark=*, mark size=1.5pt] coordinates {(8,57.229248) (16,64.439759) (64,193.07823) (256,216.91125) (512,172.05011) (4096,75.978552)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodasd, opacity=0.4, forget plot] coordinates {(8,77.536709) (8,67.576644) (8,56.100036) (16,138.66819) (16,77.56668) (16,10.230012) (16,183.03435) (16,29.015269) (16,84.803232) (16,84.918179) (64,161.16072) (64,533.15587) (64,166.5213) (64,157.18997) (64,370.74772) (64,197.79509) (64,248.35348) (64,3350.0309) (64,92.279528) (64,114.56755) (64,284.33216) (64,155.35044) (64,195.76184) (64,94.836826) (64,493.79802) (64,474.7129) (256,1639.3) (256,225.43708) (256,75.223849) (256,303.14254) (256,285.1438) (256,239.14962) (512,79.376926) (512,76.989929) (512,274.84832) (512,15.724121) (512,162.08008) (512,212.418)};
+  \addplot+[color=methodasd, solid, very thick, mark=square*, mark size=1.5pt] coordinates {(8,67.576644) (16,84.803232) (64,196.77846) (256,262.14671) (512,120.7285)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark size=1.3pt, color=methodkktmcc, opacity=0.4, forget plot] coordinates {(8,18.31388) (16,43.13253) (4096,25.490875) (4096,4985.5603) (4096,412.35164)};
+  \addplot+[color=methodkktmcc, solid, very thick, mark=triangle*, mark size=1.5pt] coordinates {(8,18.31388) (16,43.13253) (4096,412.35164)};
+  \addplot+[only marks, mark=diamond*, mark size=1.5pt, mark size=1.3pt, color=methodkktsos1, opacity=0.4, forget plot] coordinates {(8,25.403374) (16,218.36066) (16,1.3392857) (64,397.47464) (64,23.076934) (64,117.9591) (64,157.42979) (64,470.31488) (64,124.76116) (256,32.70056) (256,603.10458) (256,494.71904) (512,880.39394) (512,30.530357) (4096,3.94697088e+04) (4096,28.343728)};
+  \addplot+[color=methodkktsos1, solid, very thick, mark=diamond*, mark size=1.5pt] coordinates {(8,25.403374) (16,109.84997) (64,141.09548) (256,494.71904) (512,455.46215) (4096,1.97490263e+04)};
+  \addplot+[only marks, mark=diamond, mark size=1.5pt, mark size=1.3pt, color=methodiomallssd, opacity=0.4, forget plot] coordinates {(512,183.6787) (4096,40.641693) (4096,449.06738)};
+  \addplot+[color=methodiomallssd, dotted, very thick, mark=diamond, mark size=1.5pt] coordinates {(512,183.6787) (4096,244.85454)};
+  \addplot+[only marks, mark=star, mark size=1.5pt, mark size=1.3pt, color=methodiomallasd, opacity=0.4, forget plot] coordinates {(256,27.619289) (256,162.64945) (256,144.08902) (512,58.312915) (512,102.21281) (512,180.89233) (4096,190.31715) (4096,56.166207) (4096,466.89146) (4096,14.288787) (4096,222.12304)};
+  \addplot+[color=methodiomallasd, dotted, very thick, mark=star, mark size=1.5pt] coordinates {(256,144.08902) (512,102.21281) (4096,190.31715)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=90}, mark size=1.3pt, color=methodiomallkktmcc, opacity=0.4, forget plot] coordinates {(16,22.533645) (16,485.31416) (64,136.39876) (64,521.77864) (64,4218.5861) (64,261.01165) (64,3.6651521) (64,44.29643) (64,747.9561) (256,1.3648821) (256,183.64941) (256,77.584087) (256,212.5291) (256,198.64914) (256,405.10312) (256,97.536796) (512,80.724807) (512,26.505518) (512,118.05397) (512,783.64918) (512,107.33417) (4096,5.1803105) (4096,57.752909) (4096,205.15007) (4096,470.38414) (4096,67.374009) (4096,143.76708) (4096,235.133)};
+  \addplot+[color=methodiomallkktmcc, dotted, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=90}] coordinates {(16,253.9239) (64,261.01165) (256,183.64941) (512,107.33417) (4096,143.76708)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}, mark size=1.3pt, color=methodiomallkktsos1, opacity=0.4, forget plot] coordinates {(16,485.31416) (64,512.00893) (64,15.314571) (64,109.84561) (64,3960.3057) (64,249.51737) (64,712.40827) (64,35.476962) (64,222.29465) (64,148.99764) (256,197.28594) (256,2.8297076) (256,4.064141) (256,170.99484) (256,428.40446) (256,97.536796) (256,80.92295) (256,171.59475) (512,28.155259) (512,95.766967) (512,67.676689) (512,19.734506) (512,783.64918) (4096,57.752909) (4096,5.1803105) (4096,205.15007) (4096,67.37112) (4096,470.38414) (4096,143.76708) (4096,264.73133)};
+  \addplot+[color=methodiomallkktsos1, dotted, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}] coordinates {(16,485.31416) (64,222.29465) (256,134.26582) (512,67.676689) (4096,143.76708)};
+  \addplot+[only marks, mark=pentagon*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1ssd, opacity=0.4, forget plot] coordinates {(512,41.620175) (512,46.521623) (4096,40.115283)};
+  \addplot+[color=methodiomtop1ssd, dash dot, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(512,44.070899) (4096,40.115283)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1asd, opacity=0.4, forget plot] coordinates {(256,131.6336) (512,36.455062) (512,69.056351) (512,52.974648) (4096,75.654242) (4096,26.060487) (4096,112.49039) (4096,11.376665)};
+  \addplot+[color=methodiomtop1asd, dash dot, very thick, mark=square*, mark size=1.5pt] coordinates {(256,131.6336) (512,52.974648) (4096,50.857364)};
+  \addplot+[only marks, mark=*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1kktmcc, opacity=0.4, forget plot] coordinates {(16,19.819831) (64,515.5247) (64,180.78381) (64,71.864641) (64,3.6651521) (64,21.233456) (256,55.822664) (256,163.89373) (512,141.5836) (512,114.57506) (512,53.583235) (512,25.861753) (512,40.324295) (4096,205.15007) (4096,161.44338) (4096,57.752909) (4096,43.297835) (4096,21.233695) (4096,45.497058)};
+  \addplot+[color=methodiomtop1kktmcc, dash dot, very thick, mark=*, mark size=1.5pt] coordinates {(16,19.819831) (64,71.864641) (256,109.8582) (512,53.583235) (4096,51.624983)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1kktsos1, opacity=0.4, forget plot] coordinates {(64,76.307349) (64,74.952603) (64,15.917894) (64,27.131322) (256,47.042806) (256,132.81533) (512,23.02222) (512,139.15371) (512,27.739503) (512,112.40576) (512,80.657037) (512,43.5976) (4096,163.02179) (4096,0.21067432) (4096,110.92718) (4096,57.006526) (4096,43.352237) (4096,133.72375) (4096,40.085229)};
+  \addplot+[color=methodiomtop1kktsos1, dash dot, very thick, mark=square*, mark size=1.5pt] coordinates {(64,51.041963) (256,89.929066) (512,62.127319) (4096,57.006526)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=180}, mark size=1.3pt, color=methodiomallmibs, opacity=0.4, forget plot] coordinates {(4096,2.67746498e+04)};
+  \addplot+[color=methodiomallmibs, dotted, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=180}] coordinates {(4096,2.67746498e+04)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1mibs, opacity=0.4, forget plot] coordinates {(16,339.19067)};
+  \addplot+[color=methodiomtop1mibs, dash dot, very thick, mark=square*, mark size=1.5pt] coordinates {(16,339.19067)};
+  \end{axis}
+\end{tikzpicture}

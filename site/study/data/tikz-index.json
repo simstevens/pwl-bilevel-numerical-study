@@ -1,0 +1,201 @@
+{
+ "sets": {
+  "Xu\u2013Wang, integer leader": {
+   "key": "xu-wang-integer",
+   "files": [
+    "final_gap_by_scale.tikz",
+    "final_gap_by_scale__legend.tikz",
+    "iteration_ecdf.tikz",
+    "iteration_ecdf__legend.tikz",
+    "iteration_ecdf_by_instance_size.tikz",
+    "iteration_ecdf_by_instance_size__legend.tikz",
+    "linear_constraints_by_scale.tikz",
+    "linear_constraints_by_scale__legend.tikz",
+    "node_ecdf.tikz",
+    "node_ecdf__legend.tikz",
+    "oov_iterations_heat_map.tikz",
+    "overall_variables_by_scale.tikz",
+    "overall_variables_by_scale__legend.tikz",
+    "proof_rate_heat_map.tikz",
+    "quadratic_constraints_by_scale.tikz",
+    "quadratic_constraints_by_scale__legend.tikz",
+    "runtime_ecdf.tikz",
+    "runtime_ecdf__legend.tikz",
+    "runtime_ecdf_by_instance_size.tikz",
+    "runtime_ecdf_by_instance_size__legend.tikz"
+   ]
+  },
+  "Knapsack interdiction, integer leader": {
+   "key": "knapsack-interdiction-integer",
+   "files": [
+    "final_gap_by_scale.tikz",
+    "final_gap_by_scale__legend.tikz",
+    "iteration_ecdf.tikz",
+    "iteration_ecdf__legend.tikz",
+    "iteration_ecdf_by_instance_size.tikz",
+    "iteration_ecdf_by_instance_size__legend.tikz",
+    "linear_constraints_by_scale.tikz",
+    "linear_constraints_by_scale__legend.tikz",
+    "node_ecdf.tikz",
+    "node_ecdf__legend.tikz",
+    "oov_iterations_heat_map.tikz",
+    "overall_variables_by_scale.tikz",
+    "overall_variables_by_scale__legend.tikz",
+    "proof_rate_heat_map.tikz",
+    "quadratic_constraints_by_scale.tikz",
+    "quadratic_constraints_by_scale__legend.tikz",
+    "runtime_ecdf.tikz",
+    "runtime_ecdf__legend.tikz",
+    "runtime_ecdf_by_item_count.tikz",
+    "runtime_ecdf_by_item_count__legend.tikz"
+   ]
+  },
+  "Xu\u2013Wang, continuous leader": {
+   "key": "xu-wang-continuous",
+   "files": [
+    "final_gap_by_scale.tikz",
+    "final_gap_by_scale__legend.tikz",
+    "iteration_ecdf.tikz",
+    "iteration_ecdf__legend.tikz",
+    "iteration_ecdf_by_instance_size.tikz",
+    "iteration_ecdf_by_instance_size__legend.tikz",
+    "linear_constraints_by_scale.tikz",
+    "linear_constraints_by_scale__legend.tikz",
+    "node_ecdf.tikz",
+    "node_ecdf__legend.tikz",
+    "oov_iterations_heat_map.tikz",
+    "overall_variables_by_scale.tikz",
+    "overall_variables_by_scale__legend.tikz",
+    "proof_rate_heat_map.tikz",
+    "quadratic_constraints_by_scale.tikz",
+    "quadratic_constraints_by_scale__legend.tikz",
+    "runtime_ecdf.tikz",
+    "runtime_ecdf__legend.tikz",
+    "runtime_ecdf_by_instance_size.tikz",
+    "runtime_ecdf_by_instance_size__legend.tikz"
+   ]
+  },
+  "Knapsack interdiction, continuous leader": {
+   "key": "knapsack-interdiction-continuous",
+   "files": [
+    "final_gap_by_scale.tikz",
+    "final_gap_by_scale__legend.tikz",
+    "iteration_ecdf.tikz",
+    "iteration_ecdf__legend.tikz",
+    "iteration_ecdf_by_instance_size.tikz",
+    "iteration_ecdf_by_instance_size__legend.tikz",
+    "linear_constraints_by_scale.tikz",
+    "linear_constraints_by_scale__legend.tikz",
+    "node_ecdf.tikz",
+    "node_ecdf__legend.tikz",
+    "oov_iterations_heat_map.tikz",
+    "overall_variables_by_scale.tikz",
+    "overall_variables_by_scale__legend.tikz",
+    "proof_rate_heat_map.tikz",
+    "quadratic_constraints_by_scale.tikz",
+    "quadratic_constraints_by_scale__legend.tikz",
+    "runtime_ecdf.tikz",
+    "runtime_ecdf__legend.tikz",
+    "runtime_ecdf_by_item_count.tikz",
+    "runtime_ecdf_by_item_count__legend.tikz"
+   ]
+  }
+ },
+ "methods": [
+  {
+   "key": "SSD",
+   "label": "SSD",
+   "colour": "methodssd"
+  },
+  {
+   "key": "ASD",
+   "label": "ASD",
+   "colour": "methodasd"
+  },
+  {
+   "key": "KKT-McC",
+   "label": "KKT-McC",
+   "colour": "methodkktmcc"
+  },
+  {
+   "key": "KKT-SOS1",
+   "label": "KKT-SOS1",
+   "colour": "methodkktsos1"
+  },
+  {
+   "key": "CB-SSD",
+   "label": "CB-SSD",
+   "colour": "methodcbssd"
+  },
+  {
+   "key": "CB-ASD",
+   "label": "CB-ASD",
+   "colour": "methodcbasd"
+  },
+  {
+   "key": "CB-KKT-McC",
+   "label": "CB-KKT-McC",
+   "colour": "methodcbkktmcc"
+  },
+  {
+   "key": "CB-KKT-SOS1",
+   "label": "CB-KKT-SOS1",
+   "colour": "methodcbkktsos1"
+  },
+  {
+   "key": "MibS",
+   "label": "MibS",
+   "colour": "methodmibs"
+  },
+  {
+   "key": "IOM-All_(SSD)",
+   "label": "IOM-All (SSD)",
+   "colour": "methodiomallssd"
+  },
+  {
+   "key": "IOM-All_(ASD)",
+   "label": "IOM-All (ASD)",
+   "colour": "methodiomallasd"
+  },
+  {
+   "key": "IOM-All_(KKT-McC)",
+   "label": "IOM-All (KKT-McC)",
+   "colour": "methodiomallkktmcc"
+  },
+  {
+   "key": "IOM-All_(KKT-SOS1)",
+   "label": "IOM-All (KKT-SOS1)",
+   "colour": "methodiomallkktsos1"
+  },
+  {
+   "key": "IOM-All_(MibS)",
+   "label": "IOM-All (MibS)",
+   "colour": "methodiomallmibs"
+  },
+  {
+   "key": "IOM-Top1_(SSD)",
+   "label": "IOM-Top1 (SSD)",
+   "colour": "methodiomtop1ssd"
+  },
+  {
+   "key": "IOM-Top1_(ASD)",
+   "label": "IOM-Top1 (ASD)",
+   "colour": "methodiomtop1asd"
+  },
+  {
+   "key": "IOM-Top1_(KKT-McC)",
+   "label": "IOM-Top1 (KKT-McC)",
+   "colour": "methodiomtop1kktmcc"
+  },
+  {
+   "key": "IOM-Top1_(KKT-SOS1)",
+   "label": "IOM-Top1 (KKT-SOS1)",
+   "colour": "methodiomtop1kktsos1"
+  },
+  {
+   "key": "IOM-Top1_(MibS)",
+   "label": "IOM-Top1 (MibS)",
+   "colour": "methodiomtop1mibs"
+  }
+ ]
+}

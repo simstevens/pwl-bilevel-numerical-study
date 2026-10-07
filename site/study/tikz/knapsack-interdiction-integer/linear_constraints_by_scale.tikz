@@ -1,0 +1,44 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \definecolor{methodcbssd}{RGB}{76,114,176}
+  \definecolor{methodcbasd}{RGB}{221,132,82}
+  \definecolor{methodcbkktmcc}{RGB}{196,78,82}
+  \definecolor{methodcbkktsos1}{RGB}{85,168,104}
+  \definecolor{methodssd}{RGB}{76,114,176}
+  \definecolor{methodasd}{RGB}{221,132,82}
+  \definecolor{methodkktmcc}{RGB}{196,78,82}
+  \definecolor{methodkktsos1}{RGB}{85,168,104}
+  \definecolor{methodmibs}{RGB}{129,114,179}
+  \begin{axis}[
+    width=0.85\textwidth,
+    height=0.52\textwidth,
+    xlabel={Regional assignments},
+    ylabel={Linear constraints},
+    tick align=outside,
+    axis lines=left,
+    axis line style={black, line width=0.5pt},
+    grid=both,
+    major grid style={draw=black!8, line width=0.5pt},
+    minor grid style={draw=black!8, line width=0.3pt},
+    tick style={black, line width=0.5pt},
+    tick label style={font=\footnotesize},
+    label style={font=\footnotesize},
+    every axis plot/.append style={line join=round},
+    legend style={draw=none, font=\footnotesize},
+    legend cell align={left},
+    clip marker paths=true,
+    enlarge y limits=0.05,
+    xmode=log,
+    enlarge x limits={lower=0.025,upper=0.05},
+    log basis x=2,
+  ]
+  \addplot+[color=methodcbssd, dashed, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(2,327) (4,441.5) (8,748.5) (16,897.5) (64,3004) (256,6803) (512,1.50550000e+04) (4096,6.07380000e+04)};
+  \addplot+[color=methodcbasd, dashed, very thick, mark=star, mark size=1.5pt] coordinates {(2,327) (4,441.5) (8,748.5) (16,897.5) (64,3004) (256,6803) (512,1.50550000e+04) (4096,6.07380000e+04)};
+  \addplot+[color=methodcbkktmcc, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=90}] coordinates {(2,895) (4,1213.5) (8,2132.5) (16,2573.5) (64,8820) (256,2.00990000e+04) (512,4.45910000e+04) (4096,1.79970000e+05)};
+  \addplot+[color=methodcbkktsos1, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}] coordinates {(2,611) (4,827.5) (8,1440.5) (16,1735.5) (64,5912) (256,1.34510000e+04) (512,2.98230000e+04) (4096,1.20354000e+05)};
+  \addplot+[color=methodssd, solid, very thick, mark=*, mark size=1.5pt] coordinates {(2,212) (4,382) (8,722) (16,1402) (64,5482) (256,2.18020000e+04) (512,4.35620000e+04) (4096,3.48202000e+05)};
+  \addplot+[color=methodasd, solid, very thick, mark=square*, mark size=1.5pt] coordinates {(2,212) (4,382) (8,722) (16,1402) (64,5482) (256,2.18020000e+04) (512,4.35620000e+04) (4096,3.48202000e+05)};
+  \addplot+[color=methodkktmcc, solid, very thick, mark=triangle*, mark size=1.5pt] coordinates {(2,860) (4,1678) (8,3314) (16,6586) (64,2.62180000e+04) (256,1.04746000e+05) (512,2.09450000e+05) (4096,1.67530600e+06)};
+  \addplot+[color=methodkktsos1, solid, very thick, mark=diamond*, mark size=1.5pt] coordinates {(2,372) (4,702) (8,1362) (16,2682) (64,1.06020000e+04) (256,4.22820000e+04) (512,8.45220000e+04) (4096,6.75882000e+05)};
+  \addplot+[color=methodmibs, solid, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=180}] coordinates {(2,46) (4,50) (8,56) (16,58) (64,70) (256,74) (512,90) (4096,106)};
+  \end{axis}
+\end{tikzpicture}

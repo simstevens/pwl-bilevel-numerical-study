@@ -1,0 +1,33 @@
+/* Study website styles. */
+.study-chart { width: 100%; overflow-x: auto; margin: 1rem 0 2rem 0; }
+.study-chart .vega-bindings { margin-top: 0.75rem; display: flex; flex-wrap: wrap; gap: 1rem; }
+.study-chart .vega-bind-name { font-weight: 600; margin-right: 0.4rem; font-size: 0.85rem; }
+.study-chart .vega-bind select, .study-chart .vega-bind input { font-size: 0.8rem; }
+.study-chart-downloads { display: flex; gap: 0.5rem; margin: -1.2rem 0 2rem 0; }
+.study-chart-downloads .md-button { padding: 0.1rem 0.7rem; font-size: 0.7rem; }
+.study-explorer-controls { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; margin-bottom: 0.8rem; }
+.study-explorer-controls input[type="search"] { padding: 0.2rem 0.4rem; min-width: 14rem; }
+.study-explorer-scroll { overflow: auto; max-height: 75vh; }
+.study-explorer-table { font-size: 0.68rem; border-collapse: collapse; }
+.study-explorer-table th { position: sticky; top: 0; background: var(--md-default-bg-color); cursor: pointer; white-space: nowrap; }
+.study-explorer-table td, .study-explorer-table th { padding: 0.15rem 0.4rem; border-bottom: 1px solid var(--md-default-fg-color--lightest); white-space: nowrap; }
+.study-explorer-table .outcome-proved { color: #1b7f3b; }
+.study-explorer-table .outcome-limit_incumbent { color: #b06f00; }
+.study-explorer-table .outcome-failed { color: #b00020; font-weight: 600; }
+.study-explorer-table .outcome-infeasible, .study-explorer-table .outcome-limit_none { color: #666; }
+.md-typeset .study-sortable table th { cursor: pointer; }
+.study-method-panel { border: 1px solid var(--md-default-fg-color--lightest); border-radius: 0.2rem; padding: 0.6rem 0.8rem; margin: 1rem 0; }
+.study-method-buttons { display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.4rem; }
+.study-method-buttons .md-button { padding: 0.1rem 0.7rem; font-size: 0.7rem; }
+/* Use the full screen width; tables scroll only when they really do not fit. */
+.md-grid { max-width: none; }
+.md-typeset .study-sortable table { display: table; width: 100%; }
+/* Method-selection matrix (rows = kind, columns = master), as in the per-analysis report. */
+.study-method-matrix-wrap { overflow-x: auto; }
+.md-typeset table.study-method-matrix { display: table; border-collapse: collapse; font-size: 0.75rem; width: 100%; }
+.md-typeset table.study-method-matrix th, .md-typeset table.study-method-matrix td { border: 1px solid var(--md-default-fg-color--lightest); padding: 0.3rem 0.5rem; vertical-align: top; text-align: left; }
+.study-matrix-method { display: block; white-space: nowrap; }
+.study-matrix-group { font-weight: 600; white-space: nowrap; }
+.study-tikz-status { font-size: 0.7rem; color: var(--md-default-fg-color--light); align-self: center; }
+/* A growing chart scrolls on narrow screens instead of shrinking its fonts. */
+.study-chart[data-grow] svg { max-width: none; }

@@ -1,0 +1,437 @@
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \definecolor{methodcbssd}{RGB}{76,114,176}
+  \definecolor{methodcbasd}{RGB}{221,132,82}
+  \definecolor{methodcbkktmcc}{RGB}{196,78,82}
+  \definecolor{methodcbkktsos1}{RGB}{85,168,104}
+  \definecolor{methodssd}{RGB}{76,114,176}
+  \definecolor{methodasd}{RGB}{221,132,82}
+  \definecolor{methodkktmcc}{RGB}{196,78,82}
+  \definecolor{methodkktsos1}{RGB}{85,168,104}
+  \definecolor{methodiomallssd}{RGB}{76,114,176}
+  \definecolor{methodiomallasd}{RGB}{221,132,82}
+  \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
+  \definecolor{methodiomtop1asd}{RGB}{221,132,82}
+  \begin{axis}[
+    width=0.40\textwidth,
+    height=.52\textwidth,
+    xlabel={Regional assignments},
+    ylabel={Final optimality gap (\%)},
+    tick align=outside,
+    axis lines=left,
+    axis line style={black, line width=0.5pt},
+    grid=both,
+    major grid style={draw=black!8, line width=0.5pt},
+    minor grid style={draw=black!8, line width=0.3pt},
+    tick style={black, line width=0.5pt},
+    tick label style={font=\footnotesize},
+    label style={font=\footnotesize},
+    every axis plot/.append style={line join=round},
+    legend style={draw=none, font=\footnotesize},
+    legend cell align={left},
+    clip marker paths=true,
+    enlarge y limits=0.05,
+    xmode=log,
+    enlarge x limits={lower=0.025,upper=0.05},
+    log basis x=2,
+  ]
+  \addplot+[only marks, mark=pentagon*, mark size=1.5pt, mark size=1.3pt, color=methodcbssd, opacity=0.4, forget plot] coordinates {(2,0.80315481) (4,0.47586295) (4,3.6902966) (4,19.015395) (4,23.620051) (4,3.3870119) (4,0.69975698) (8,1.7030414) (8,4.8342843) (8,14.191884) (8,12.806049) (8,0.68073248) (8,12.25301) (16,5.8228882) (16,1.5865439) (16,4.3187575) (16,0.3227781) (16,20.232281) (16,2.139955) (64,22.015373) (64,7.6962351) (64,12.158775) (64,14.8296) (64,4.099392) (64,15.99442) (256,83.08942) (256,70.137448) (256,12.457612) (512,87.474168) (512,85.322729) (4096,100)};
+  \addplot+[color=methodcbssd, dashed, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(2,0.80315481) (4,3.5386542) (8,8.5436474) (16,3.2293563) (64,13.494188) (256,70.137448) (512,86.398449) (4096,100)};
+  \addplot+[only marks, mark=star, mark size=1.5pt, mark size=1.3pt, color=methodcbasd, opacity=0.4, forget plot] coordinates {(2,35.145994) (4,58.632889) (4,77.39357) (4,58.006077) (4,50.756163) (4,77.462491) (4,65.762608) (8,91.241841) (8,64.68217) (8,100) (8,100) (8,100) (8,48.530137) (16,100) (16,100) (16,51.311529) (16,100) (16,88.627488) (16,85.386267) (64,100) (64,100) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100) (256,100) (512,100) (512,100) (512,100)};
+  \addplot+[color=methodcbasd, dashed, very thick, mark=star, mark size=1.5pt] coordinates {(2,35.145994) (4,62.197748) (8,95.62092) (16,94.313744) (64,100) (256,100) (512,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=90}, mark size=1.3pt, color=methodcbkktmcc, opacity=0.4, forget plot] coordinates {(4,5.6023977) (4,8.4368029) (8,7.1154929) (8,12.675912) (8,9.0995848) (8,15.197569) (16,4.5196445) (16,17.610303) (64,85.490823) (64,82.051956) (64,87.651512) (64,84.345698) (64,85.150382) (64,72.936048) (256,99.92913) (256,98.018456) (512,95.689245)};
+  \addplot+[color=methodcbkktmcc, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=90}] coordinates {(4,7.0196003) (8,10.887748) (16,11.064974) (64,84.74804) (256,98.973793) (512,95.689245)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}, mark size=1.3pt, color=methodcbkktsos1, opacity=0.4, forget plot] coordinates {(2,100) (4,100) (4,100) (4,100) (4,100) (4,100) (4,80.687041) (8,100) (8,100) (8,83.47927) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100) (16,100) (16,100) (16,100)};
+  \addplot+[color=methodcbkktsos1, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}] coordinates {(2,100) (4,100) (8,100) (16,100)};
+  \addplot+[only marks, mark=*, mark size=1.5pt, mark size=1.3pt, color=methodssd, opacity=0.4, forget plot] coordinates {(2,0.0933771) (2,0.47057345) (2,0.44401443) (4,12.619809) (4,2.4941231) (4,22.530617) (4,37.100245) (4,2.3096756) (4,5.4671766) (8,2.2236834) (8,15.908108) (8,2.7480703) (8,5.1691577) (8,4.8953989) (8,6.0484582) (16,6.3377317) (16,9.8884514) (16,6.0107831) (16,1.1687366) (16,4.6098193) (16,51.998118) (64,90.836437) (64,92.075177) (64,83.016242) (64,80.710604) (64,83.642864) (64,81.963703) (256,100) (256,100) (256,100) (512,100) (512,100) (512,100)};
+  \addplot+[color=methodssd, solid, very thick, mark=*, mark size=1.5pt] coordinates {(2,0.44401443) (4,9.0434928) (8,5.0322783) (16,6.1742574) (64,83.329553) (256,100) (512,100)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodasd, opacity=0.4, forget plot] coordinates {(2,39.16244) (2,34.973253) (2,29.519429) (4,97.396717) (4,72.034837) (4,88.116919) (4,68.90388) (4,62.533959) (4,70.670763) (8,100) (8,100) (8,81.64265) (8,100) (8,100) (8,90.888155) (16,100) (16,100) (16,100) (16,100) (16,100) (16,97.973729) (64,100) (64,100) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100) (512,100)};
+  \addplot+[color=methodasd, solid, very thick, mark=square*, mark size=1.5pt] coordinates {(2,34.973253) (4,71.3528) (8,100) (16,100) (64,100) (256,100) (512,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark size=1.3pt, color=methodkktmcc, opacity=0.4, forget plot] coordinates {(4,6.3349506) (4,5.9205591) (4,9.2473426) (8,7.8137634) (8,23.690909) (8,39.332359) (16,55.612829) (16,78.607657) (16,15.091137) (16,98.173919) (16,48.468583) (16,88.423053) (64,97.732848) (64,99.071101) (64,99.869584) (512,100)};
+  \addplot+[color=methodkktmcc, solid, very thick, mark=triangle*, mark size=1.5pt] coordinates {(4,6.3349506) (8,23.690909) (16,67.110243) (64,99.071101) (512,100)};
+  \addplot+[only marks, mark=diamond*, mark size=1.5pt, mark size=1.3pt, color=methodkktsos1, opacity=0.4, forget plot] coordinates {(2,100) (2,100) (2,96.948094) (4,100) (4,100) (4,100) (4,100) (4,100) (4,100) (8,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100)};
+  \addplot+[color=methodkktsos1, solid, very thick, mark=diamond*, mark size=1.5pt] coordinates {(2,100) (4,100) (8,100) (16,100)};
+  \addplot+[only marks, mark=diamond, mark size=1.5pt, mark size=1.3pt, color=methodiomallssd, opacity=0.4, forget plot] coordinates {(4,8.798277) (4,19.803246) (4,44.902246) (8,66.558394) (8,26.506902) (8,50.695124) (16,15.055405) (16,50.885065) (16,21.346982) (64,38.337252) (64,14.139688) (64,75.218463) (256,68.165197) (256,68.960594) (512,65.499267) (512,89.672109) (4096,92.250309) (4096,93.271059) (4096,85.798528)};
+  \addplot+[color=methodiomallssd, dotted, very thick, mark=diamond, mark size=1.5pt] coordinates {(4,19.803246) (8,50.695124) (16,21.346982) (64,38.337252) (256,68.562896) (512,77.585688) (4096,92.250309)};
+  \addplot+[only marks, mark=star, mark size=1.5pt, mark size=1.3pt, color=methodiomallasd, opacity=0.4, forget plot] coordinates {(2,34.728601) (4,67.49398) (4,58.464563) (4,74.002346) (4,67.959103) (4,63.771106) (4,60.021861) (8,64.658767) (8,100) (8,100) (8,90.931202) (8,92.337874) (16,89.458184) (16,82.47434) (16,100) (16,100) (16,100) (16,92.215847) (64,100) (64,100) (256,100) (256,100) (512,100) (512,100) (4096,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomallasd, dotted, very thick, mark=star, mark size=1.5pt] coordinates {(2,34.728601) (4,65.632543) (8,92.337874) (16,96.107923) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=pentagon*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1ssd, opacity=0.4, forget plot] coordinates {(4,8.800771) (4,67.052106) (4,28.820386) (4,13.144459) (8,26.494375) (8,68.181549) (8,23.45131) (8,38.313288) (16,12.149077) (16,15.695586) (16,16.255828) (16,68.675822) (64,33.935703) (64,10.663028) (64,87.836486) (256,61.9831) (256,58.735447) (512,70.477523) (512,88.107505) (4096,94.595257) (4096,92.179761) (4096,82.649984)};
+  \addplot+[color=methodiomtop1ssd, dash dot, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(4,20.982422) (8,32.403831) (16,15.975707) (64,33.935703) (256,60.359273) (512,79.292514) (4096,92.179761)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1asd, opacity=0.4, forget plot] coordinates {(2,34.718156) (4,67.52093) (4,58.403767) (4,86.804566) (4,58.552271) (4,63.770659) (4,78.428846) (8,75.982007) (8,56.003148) (8,100) (8,90.874457) (8,88.600636) (16,89.884005) (16,84.45865) (16,81.263826) (16,83.198874) (16,88.565015) (16,82.494786) (64,96.925523) (64,100) (256,90.537008) (256,100) (512,100) (512,100) (4096,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomtop1asd, dash dot, very thick, mark=square*, mark size=1.5pt] coordinates {(2,34.718156) (4,65.645794) (8,88.600636) (16,83.828762) (64,98.462761) (256,95.268504) (512,100) (4096,100)};
+  \node[anchor=north west] at (rel axis cs:0.03,0.97) {30 items};
+  \end{axis}
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \definecolor{methodcbssd}{RGB}{76,114,176}
+  \definecolor{methodcbasd}{RGB}{221,132,82}
+  \definecolor{methodcbkktmcc}{RGB}{196,78,82}
+  \definecolor{methodcbkktsos1}{RGB}{85,168,104}
+  \definecolor{methodssd}{RGB}{76,114,176}
+  \definecolor{methodasd}{RGB}{221,132,82}
+  \definecolor{methodkktmcc}{RGB}{196,78,82}
+  \definecolor{methodkktsos1}{RGB}{85,168,104}
+  \definecolor{methodiomallssd}{RGB}{76,114,176}
+  \definecolor{methodiomallasd}{RGB}{221,132,82}
+  \definecolor{methodiomallkktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomallkktsos1}{RGB}{85,168,104}
+  \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
+  \definecolor{methodiomtop1asd}{RGB}{221,132,82}
+  \definecolor{methodiomtop1kktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomtop1kktsos1}{RGB}{85,168,104}
+  \begin{axis}[
+    width=0.40\textwidth,
+    height=.52\textwidth,
+    xlabel={Regional assignments},
+    ylabel={Final optimality gap (\%)},
+    tick align=outside,
+    axis lines=left,
+    axis line style={black, line width=0.5pt},
+    grid=both,
+    major grid style={draw=black!8, line width=0.5pt},
+    minor grid style={draw=black!8, line width=0.3pt},
+    tick style={black, line width=0.5pt},
+    tick label style={font=\footnotesize},
+    label style={font=\footnotesize},
+    every axis plot/.append style={line join=round},
+    legend style={draw=none, font=\footnotesize},
+    legend cell align={left},
+    clip marker paths=true,
+    enlarge y limits=0.05,
+    xmode=log,
+    enlarge x limits={lower=0.025,upper=0.05},
+    log basis x=2
+  ]
+  \addplot+[only marks, mark=pentagon*, mark size=1.5pt, mark size=1.3pt, color=methodcbssd, opacity=0.4, forget plot] coordinates {(4,44.231324) (8,11.085526) (16,4.5252186) (16,49.408456) (64,63.61189) (64,0.070441352) (256,80.454019) (512,100) (512,58.247927) (4096,100) (4096,100)};
+  \addplot+[color=methodcbssd, dashed, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(4,44.231324) (8,11.085526) (16,26.966838) (64,31.841166) (256,80.454019) (512,79.123964) (4096,100)};
+  \addplot+[only marks, mark=star, mark size=1.5pt, mark size=1.3pt, color=methodcbasd, opacity=0.4, forget plot] coordinates {(4,37.146042) (4,100) (4,37.503043) (4,100) (4,24.748967) (8,100) (8,100) (8,100) (8,100) (8,10.758076) (16,100) (16,100) (16,100) (16,100) (16,100) (16,100) (64,100) (64,100) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100) (256,100) (512,100) (512,100) (512,100)};
+  \addplot+[color=methodcbasd, dashed, very thick, mark=star, mark size=1.5pt] coordinates {(4,37.503043) (8,100) (16,100) (64,100) (256,100) (512,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=90}, mark size=1.3pt, color=methodcbkktmcc, opacity=0.4, forget plot] coordinates {(64,83.479727) (64,27.867141) (256,100) (256,35.663043) (512,91.963532)};
+  \addplot+[color=methodcbkktmcc, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=90}] coordinates {(64,55.673434) (256,67.831522) (512,91.963532)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}, mark size=1.3pt, color=methodcbkktsos1, opacity=0.4, forget plot] coordinates {(2,100) (4,100) (4,100) (4,100) (8,100) (8,100) (8,100) (8,100) (16,100) (16,98.261913) (16,100) (16,100) (16,100) (64,100) (64,100) (256,32.400881) (256,100)};
+  \addplot+[color=methodcbkktsos1, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}] coordinates {(2,100) (4,100) (8,100) (16,100) (64,100) (256,66.20044)};
+  \addplot+[only marks, mark=*, mark size=1.5pt, mark size=1.3pt, color=methodssd, opacity=0.4, forget plot] coordinates {(4,16.847886) (4,27.296447) (16,0.86035554) (16,8.4577074) (64,57.363077) (64,66.57225) (64,3.1845134) (256,100) (256,100) (256,100) (512,100) (512,100) (512,100)};
+  \addplot+[color=methodssd, solid, very thick, mark=*, mark size=1.5pt] coordinates {(4,22.072166) (16,4.6590315) (64,57.363077) (256,100) (512,100)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodasd, opacity=0.4, forget plot] coordinates {(2,100) (2,60.285462) (4,100) (4,100) (4,100) (4,77.917666) (4,78.777511) (4,55.268577) (8,100) (8,100) (8,100) (8,54.51816) (8,100) (8,51.097968) (16,100) (16,100) (16,100) (16,100) (16,100) (16,100) (64,100) (64,100) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100) (256,100)};
+  \addplot+[color=methodasd, solid, very thick, mark=square*, mark size=1.5pt] coordinates {(2,80.142731) (4,89.388756) (8,100) (16,100) (64,100) (256,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark size=1.3pt, color=methodkktmcc, opacity=0.4, forget plot] coordinates {(8,7.2790169) (16,36.312997) (64,100) (64,99.982037) (64,99.093786) (64,99.987088) (64,100) (64,100) (256,100) (256,100) (256,100)};
+  \addplot+[color=methodkktmcc, solid, very thick, mark=triangle*, mark size=1.5pt] coordinates {(8,7.2790169) (16,36.312997) (64,99.993544) (256,100)};
+  \addplot+[only marks, mark=diamond*, mark size=1.5pt, mark size=1.3pt, color=methodkktsos1, opacity=0.4, forget plot] coordinates {(2,100) (2,100) (4,100) (4,100) (4,100) (4,67.50653) (4,100) (4,90.097532) (8,100) (8,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100) (16,100) (16,100) (16,100) (64,100) (64,100) (64,100) (64,100) (64,100) (64,100) (256,100)};
+  \addplot+[color=methodkktsos1, solid, very thick, mark=diamond*, mark size=1.5pt] coordinates {(2,100) (4,100) (8,100) (16,100) (64,100) (256,100)};
+  \addplot+[only marks, mark=diamond, mark size=1.5pt, mark size=1.3pt, color=methodiomallssd, opacity=0.4, forget plot] coordinates {(4,51.193486) (4,48.500502) (8,2.471366) (16,80.579104) (64,91.905611) (64,47.993699) (64,75.092455) (256,91.741849) (256,40.903157) (512,98.83173) (512,67.366398) (4096,100) (4096,80.306391) (4096,100)};
+  \addplot+[color=methodiomallssd, dotted, very thick, mark=diamond, mark size=1.5pt] coordinates {(4,49.846994) (8,2.471366) (16,80.579104) (64,75.092455) (256,66.322503) (512,83.099064) (4096,100)};
+  \addplot+[only marks, mark=star, mark size=1.5pt, mark size=1.3pt, color=methodiomallasd, opacity=0.4, forget plot] coordinates {(2,57.110555) (2,75.04989) (4,66.896269) (4,58.760576) (4,51.884354) (4,39.634258) (8,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100) (16,100) (16,100) (16,100) (64,100) (64,100) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100) (256,100) (512,100) (512,100) (512,100) (4096,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomallasd, dotted, very thick, mark=star, mark size=1.5pt] coordinates {(2,66.080223) (4,55.322465) (8,100) (16,100) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=90}, mark size=1.3pt, color=methodiomallkktmcc, opacity=0.4, forget plot] coordinates {(4,100) (4,100) (8,100) (8,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100) (16,100) (16,100) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100) (256,100) (512,100) (512,100) (512,100) (4096,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomallkktmcc, dotted, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=90}] coordinates {(4,100) (8,100) (16,100) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}, mark size=1.3pt, color=methodiomallkktsos1, opacity=0.4, forget plot] coordinates {(64,100) (256,100) (512,100) (4096,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomallkktsos1, dotted, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}] coordinates {(64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=pentagon*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1ssd, opacity=0.4, forget plot] coordinates {(4,48.22317) (4,51.174122) (8,2.5059684) (8,54.168913) (16,76.803494) (16,90.380657) (64,32.977252) (64,68.586379) (64,89.220904) (64,38.689421) (256,81.655895) (256,90.459801) (256,94.07573) (512,98.132452) (512,96.770011) (512,99.765597) (4096,100) (4096,100) (4096,91.47331)};
+  \addplot+[color=methodiomtop1ssd, dash dot, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(4,49.698646) (8,28.337441) (16,83.592075) (64,53.6379) (256,90.459801) (512,98.132452) (4096,100)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1asd, opacity=0.4, forget plot] coordinates {(2,57.065078) (2,74.983787) (4,66.688523) (4,58.694909) (4,51.874634) (4,39.538848) (8,100) (8,93.538457) (8,100) (8,100) (16,100) (16,100) (16,97.62276) (16,100) (16,100) (16,100) (64,98.779216) (64,100) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100) (256,98.436329) (512,100) (512,100) (512,100) (4096,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomtop1asd, dash dot, very thick, mark=square*, mark size=1.5pt] coordinates {(2,66.024433) (4,55.284772) (8,100) (16,100) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1kktmcc, opacity=0.4, forget plot] coordinates {(4,100) (4,100) (8,100) (8,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100) (16,100) (16,100) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100) (256,100) (512,100) (512,100) (512,100) (4096,100) (4096,99.899138) (4096,100)};
+  \addplot+[color=methodiomtop1kktmcc, dash dot, very thick, mark=*, mark size=1.5pt] coordinates {(4,100) (8,100) (16,100) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1kktsos1, opacity=0.4, forget plot] coordinates {(64,100) (256,100) (512,100) (4096,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomtop1kktsos1, dash dot, very thick, mark=square*, mark size=1.5pt] coordinates {(64,100) (256,100) (512,100) (4096,100)};
+  \node[anchor=north west] at (rel axis cs:0.03,0.97) {35 items};
+  \end{axis}
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \definecolor{methodcbssd}{RGB}{76,114,176}
+  \definecolor{methodcbasd}{RGB}{221,132,82}
+  \definecolor{methodcbkktmcc}{RGB}{196,78,82}
+  \definecolor{methodcbkktsos1}{RGB}{85,168,104}
+  \definecolor{methodssd}{RGB}{76,114,176}
+  \definecolor{methodasd}{RGB}{221,132,82}
+  \definecolor{methodkktmcc}{RGB}{196,78,82}
+  \definecolor{methodkktsos1}{RGB}{85,168,104}
+  \definecolor{methodiomallssd}{RGB}{76,114,176}
+  \definecolor{methodiomallasd}{RGB}{221,132,82}
+  \definecolor{methodiomallkktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomallkktsos1}{RGB}{85,168,104}
+  \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
+  \definecolor{methodiomtop1asd}{RGB}{221,132,82}
+  \definecolor{methodiomtop1kktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomtop1kktsos1}{RGB}{85,168,104}
+  \begin{axis}[
+    width=0.40\textwidth,
+    height=.52\textwidth,
+    xlabel={Regional assignments},
+    ylabel={Final optimality gap (\%)},
+    tick align=outside,
+    axis lines=left,
+    axis line style={black, line width=0.5pt},
+    grid=both,
+    major grid style={draw=black!8, line width=0.5pt},
+    minor grid style={draw=black!8, line width=0.3pt},
+    tick style={black, line width=0.5pt},
+    tick label style={font=\footnotesize},
+    label style={font=\footnotesize},
+    every axis plot/.append style={line join=round},
+    legend style={draw=none, font=\footnotesize},
+    legend cell align={left},
+    clip marker paths=true,
+    enlarge y limits=0.05,
+    xmode=log,
+    enlarge x limits={lower=0.025,upper=0.05},
+    log basis x=2
+  ]
+  \addplot+[only marks, mark=pentagon*, mark size=1.5pt, mark size=1.3pt, color=methodcbssd, opacity=0.4, forget plot] coordinates {(4,14.270219) (4,0.49847012) (8,11.505435) (8,49.65606) (16,57.62578) (64,0.023993706) (64,76.606008) (256,78.178055) (512,78.815093) (512,79.65651) (4096,100) (4096,100)};
+  \addplot+[color=methodcbssd, dashed, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(4,7.3843444) (8,30.580748) (16,57.62578) (64,38.315001) (256,78.178055) (512,79.235802) (4096,100)};
+  \addplot+[only marks, mark=star, mark size=1.5pt, mark size=1.3pt, color=methodcbasd, opacity=0.4, forget plot] coordinates {(2,37.130166) (2,76.332341) (4,80.615839) (4,59.834837) (4,100) (8,100) (8,83.23535) (8,100) (8,100) (8,100) (16,100) (16,46.859296) (16,100) (16,88.560791) (64,100) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100) (256,100) (512,100) (512,100) (512,100)};
+  \addplot+[color=methodcbasd, dashed, very thick, mark=star, mark size=1.5pt] coordinates {(2,56.731254) (4,80.615839) (8,100) (16,94.280395) (64,100) (256,100) (512,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=90}, mark size=1.3pt, color=methodcbkktmcc, opacity=0.4, forget plot] coordinates {(4,6.0123721) (8,23.999782) (64,88.702793) (64,67.203072) (64,62.742249) (256,99.860791) (256,95.319953)};
+  \addplot+[color=methodcbkktmcc, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=90}] coordinates {(4,6.0123721) (8,23.999782) (64,67.203072) (256,97.590372)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}, mark size=1.3pt, color=methodcbkktsos1, opacity=0.4, forget plot] coordinates {(2,100) (2,100) (4,100) (4,100) (4,100) (8,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100) (16,100)};
+  \addplot+[color=methodcbkktsos1, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}] coordinates {(2,100) (4,100) (8,100) (16,100)};
+  \addplot+[only marks, mark=*, mark size=1.5pt, mark size=1.3pt, color=methodssd, opacity=0.4, forget plot] coordinates {(2,43.86719) (4,1.9114724) (8,11.977657) (16,29.523113) (16,82.611985) (16,0.39780353) (64,87.84307) (64,80.277168) (64,29.842746) (64,0.15434534) (256,100) (256,100) (256,100) (512,100) (512,100) (512,100)};
+  \addplot+[color=methodssd, solid, very thick, mark=*, mark size=1.5pt] coordinates {(2,43.86719) (4,1.9114724) (8,11.977657) (16,29.523113) (64,55.059957) (256,100) (512,100)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodasd, opacity=0.4, forget plot] coordinates {(2,36.3708) (2,77.238206) (4,57.528902) (4,100) (4,92.08343) (4,66.29448) (8,100) (8,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100) (16,100) (64,100) (64,100) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100) (512,100)};
+  \addplot+[color=methodasd, solid, very thick, mark=square*, mark size=1.5pt] coordinates {(2,56.804503) (4,79.188955) (8,100) (16,100) (64,100) (256,100) (512,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark size=1.3pt, color=methodkktmcc, opacity=0.4, forget plot] coordinates {(4,6.2469993) (8,39.405742) (8,28.7317) (16,50.469675) (16,67.284461) (64,98.2803) (256,100)};
+  \addplot+[color=methodkktmcc, solid, very thick, mark=triangle*, mark size=1.5pt] coordinates {(4,6.2469993) (8,34.068721) (16,58.877068) (64,98.2803) (256,100)};
+  \addplot+[only marks, mark=diamond*, mark size=1.5pt, mark size=1.3pt, color=methodkktsos1, opacity=0.4, forget plot] coordinates {(2,100) (2,100) (4,100) (4,100) (4,100) (4,100) (8,100) (8,100) (16,100) (16,100) (16,100) (16,100) (64,100) (64,100) (64,100) (512,100)};
+  \addplot+[color=methodkktsos1, solid, very thick, mark=diamond*, mark size=1.5pt] coordinates {(2,100) (4,100) (8,100) (16,100) (64,100) (512,100)};
+  \addplot+[only marks, mark=diamond, mark size=1.5pt, mark size=1.3pt, color=methodiomallssd, opacity=0.4, forget plot] coordinates {(8,60.548864) (64,90.484072) (256,65.28599) (512,100) (4096,100)};
+  \addplot+[color=methodiomallssd, dotted, very thick, mark=diamond, mark size=1.5pt] coordinates {(8,60.548864) (64,90.484072) (256,65.28599) (512,100) (4096,100)};
+  \addplot+[only marks, mark=star, mark size=1.5pt, mark size=1.3pt, color=methodiomallasd, opacity=0.4, forget plot] coordinates {(2,54.180859) (4,62.973465) (8,100) (8,93.618293) (16,86.971793) (64,100) (64,100) (64,100) (256,100) (256,100) (512,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomallasd, dotted, very thick, mark=star, mark size=1.5pt] coordinates {(2,54.180859) (4,62.973465) (8,96.809147) (16,86.971793) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=90}, mark size=1.3pt, color=methodiomallkktmcc, opacity=0.4, forget plot] coordinates {(8,100) (64,100) (256,100) (256,100) (512,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomallkktmcc, dotted, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=90}] coordinates {(8,100) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}, mark size=1.3pt, color=methodiomallkktsos1, opacity=0.4, forget plot] coordinates {(64,100) (64,100) (256,100) (512,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomallkktsos1, dotted, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}] coordinates {(64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=pentagon*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1ssd, opacity=0.4, forget plot] coordinates {(8,60.460166) (64,86.628112) (256,100) (512,99.413216) (4096,100)};
+  \addplot+[color=methodiomtop1ssd, dash dot, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(8,60.460166) (64,86.628112) (256,100) (512,99.413216) (4096,100)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1asd, opacity=0.4, forget plot] coordinates {(2,53.902987) (4,63.081034) (8,94.167821) (8,100) (16,100) (16,97.203955) (64,100) (64,100) (64,99.875575) (256,100) (256,100) (512,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomtop1asd, dash dot, very thick, mark=square*, mark size=1.5pt] coordinates {(2,53.902987) (4,63.081034) (8,97.083911) (16,98.601978) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1kktmcc, opacity=0.4, forget plot] coordinates {(8,100) (64,100) (256,100) (256,100) (512,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomtop1kktmcc, dash dot, very thick, mark=*, mark size=1.5pt] coordinates {(8,100) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1kktsos1, opacity=0.4, forget plot] coordinates {(64,100) (64,100) (256,100) (512,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomtop1kktsos1, dash dot, very thick, mark=square*, mark size=1.5pt] coordinates {(64,100) (256,100) (512,100) (4096,100)};
+  \node[anchor=north west] at (rel axis cs:0.03,0.97) {40 items};
+  \end{axis}
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \definecolor{methodcbssd}{RGB}{76,114,176}
+  \definecolor{methodcbasd}{RGB}{221,132,82}
+  \definecolor{methodcbkktmcc}{RGB}{196,78,82}
+  \definecolor{methodcbkktsos1}{RGB}{85,168,104}
+  \definecolor{methodssd}{RGB}{76,114,176}
+  \definecolor{methodasd}{RGB}{221,132,82}
+  \definecolor{methodkktmcc}{RGB}{196,78,82}
+  \definecolor{methodkktsos1}{RGB}{85,168,104}
+  \definecolor{methodiomallssd}{RGB}{76,114,176}
+  \definecolor{methodiomallasd}{RGB}{221,132,82}
+  \definecolor{methodiomallkktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomallkktsos1}{RGB}{85,168,104}
+  \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
+  \definecolor{methodiomtop1asd}{RGB}{221,132,82}
+  \definecolor{methodiomtop1kktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomtop1kktsos1}{RGB}{85,168,104}
+  \begin{axis}[
+    width=0.40\textwidth,
+    height=.52\textwidth,
+    xlabel={Regional assignments},
+    ylabel={Final optimality gap (\%)},
+    tick align=outside,
+    axis lines=left,
+    axis line style={black, line width=0.5pt},
+    grid=both,
+    major grid style={draw=black!8, line width=0.5pt},
+    minor grid style={draw=black!8, line width=0.3pt},
+    tick style={black, line width=0.5pt},
+    tick label style={font=\footnotesize},
+    label style={font=\footnotesize},
+    every axis plot/.append style={line join=round},
+    legend style={draw=none, font=\footnotesize},
+    legend cell align={left},
+    clip marker paths=true,
+    enlarge y limits=0.05,
+    xmode=log,
+    enlarge x limits={lower=0.025,upper=0.05},
+    log basis x=2
+  ]
+  \addplot+[only marks, mark=pentagon*, mark size=1.5pt, mark size=1.3pt, color=methodcbssd, opacity=0.4, forget plot] coordinates {(2,19.118149) (4,39.71345) (8,47.925674) (16,47.927439) (16,35.569324) (16,17.691113) (64,61.173874) (64,67.651322) (256,3.3434375) (512,88.987312) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodcbssd, dashed, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(2,19.118149) (4,39.71345) (8,47.925674) (16,35.569324) (64,64.412598) (256,3.3434375) (512,94.493656) (4096,100)};
+  \addplot+[only marks, mark=star, mark size=1.5pt, mark size=1.3pt, color=methodcbasd, opacity=0.4, forget plot] coordinates {(2,19.078286) (2,92.732262) (4,39.759203) (4,75.384338) (4,100) (4,34.003107) (8,100) (8,100) (8,100) (16,100) (16,100) (16,99.233533) (16,100) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100) (512,100) (512,100)};
+  \addplot+[color=methodcbasd, dashed, very thick, mark=star, mark size=1.5pt] coordinates {(2,55.905274) (4,57.57177) (8,100) (16,100) (64,100) (256,100) (512,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=90}, mark size=1.3pt, color=methodcbkktmcc, opacity=0.4, forget plot] coordinates {(8,1.7615079) (16,15.097476) (64,71.277877) (64,68.99726) (64,64.54773) (256,90.643717) (256,74.643653) (512,100) (512,99.928009) (4096,100)};
+  \addplot+[color=methodcbkktmcc, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=90}] coordinates {(8,1.7615079) (16,15.097476) (64,68.99726) (256,82.643685) (512,99.964004) (4096,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}, mark size=1.3pt, color=methodcbkktsos1, opacity=0.4, forget plot] coordinates {(2,100) (4,100) (4,100) (4,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100) (16,100) (64,100) (64,100) (256,100) (512,100)};
+  \addplot+[color=methodcbkktsos1, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}] coordinates {(2,100) (4,100) (8,100) (16,100) (64,100) (256,100) (512,100)};
+  \addplot+[only marks, mark=*, mark size=1.5pt, mark size=1.3pt, color=methodssd, opacity=0.4, forget plot] coordinates {(4,45.705296) (4,67.412052) (16,45.381565) (16,63.766862) (64,79.829645) (64,80.65087) (64,60.41701) (64,72.992963) (256,100) (256,100)};
+  \addplot+[color=methodssd, solid, very thick, mark=*, mark size=1.5pt] coordinates {(4,56.558674) (16,54.574213) (64,76.411304) (256,100)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodasd, opacity=0.4, forget plot] coordinates {(2,67.994341) (2,28.622761) (4,81.984364) (4,100) (4,99.952331) (4,100) (8,56.980126) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100) (16,100) (64,100) (64,100) (64,100) (64,100) (256,100)};
+  \addplot+[color=methodasd, solid, very thick, mark=square*, mark size=1.5pt] coordinates {(2,48.308551) (4,99.976165) (8,100) (16,100) (64,100) (256,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark size=1.3pt, color=methodkktmcc, opacity=0.4, forget plot] coordinates {(8,50.820021) (8,24.400482) (16,76.470156) (64,100) (64,99.971671) (64,100) (512,100)};
+  \addplot+[color=methodkktmcc, solid, very thick, mark=triangle*, mark size=1.5pt] coordinates {(8,37.610252) (16,76.470156) (64,100) (512,100)};
+  \addplot+[only marks, mark=diamond*, mark size=1.5pt, mark size=1.3pt, color=methodkktsos1, opacity=0.4, forget plot] coordinates {(2,100) (2,100) (4,100) (4,100) (4,100) (4,100) (8,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100) (16,100) (64,100)};
+  \addplot+[color=methodkktsos1, solid, very thick, mark=diamond*, mark size=1.5pt] coordinates {(2,100) (4,100) (8,100) (16,100) (64,100)};
+  \addplot+[only marks, mark=diamond, mark size=1.5pt, mark size=1.3pt, color=methodiomallssd, opacity=0.4, forget plot] coordinates {(8,39.649656) (16,73.682785) (64,92.039771) (64,85.097583) (256,75.902141) (256,92.830467) (512,82.819177) (512,99.913192) (4096,100) (4096,98.54716)};
+  \addplot+[color=methodiomallssd, dotted, very thick, mark=diamond, mark size=1.5pt] coordinates {(8,39.649656) (16,73.682785) (64,88.568677) (256,84.366304) (512,91.366185) (4096,99.27358)};
+  \addplot+[only marks, mark=star, mark size=1.5pt, mark size=1.3pt, color=methodiomallasd, opacity=0.4, forget plot] coordinates {(2,42.653414) (4,48.538206) (4,43.723294) (8,100) (8,93.14647) (8,100) (16,100) (16,100) (64,100) (64,100) (64,100) (256,100) (256,100) (512,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomallasd, dotted, very thick, mark=star, mark size=1.5pt] coordinates {(2,42.653414) (4,46.13075) (8,100) (16,100) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=90}, mark size=1.3pt, color=methodiomallkktmcc, opacity=0.4, forget plot] coordinates {(2,100) (4,100) (4,100) (16,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomallkktmcc, dotted, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=90}] coordinates {(2,100) (4,100) (16,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}, mark size=1.3pt, color=methodiomallkktsos1, opacity=0.4, forget plot] coordinates {(512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomallkktsos1, dotted, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}] coordinates {(512,100) (4096,100)};
+  \addplot+[only marks, mark=pentagon*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1ssd, opacity=0.4, forget plot] coordinates {(8,39.51601) (16,57.237959) (64,75.269487) (64,83.613611) (64,91.086365) (256,89.696147) (256,87.210253) (512,96.2241) (512,98.447706) (4096,100) (4096,89.558529)};
+  \addplot+[color=methodiomtop1ssd, dash dot, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(8,39.51601) (16,57.237959) (64,83.613611) (256,88.4532) (512,97.335903) (4096,94.779265)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1asd, opacity=0.4, forget plot] coordinates {(2,42.648818) (4,48.536445) (4,43.804322) (8,100) (8,85.433312) (8,100) (16,100) (16,100) (64,100) (64,100) (64,86.382678) (256,100) (256,97.475347) (512,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomtop1asd, dash dot, very thick, mark=square*, mark size=1.5pt] coordinates {(2,42.648818) (4,46.170384) (8,100) (16,100) (64,100) (256,98.737674) (512,100) (4096,100)};
+  \addplot+[only marks, mark=*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1kktmcc, opacity=0.4, forget plot] coordinates {(2,100) (4,100) (4,100) (16,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomtop1kktmcc, dash dot, very thick, mark=*, mark size=1.5pt] coordinates {(2,100) (4,100) (16,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1kktsos1, opacity=0.4, forget plot] coordinates {(512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomtop1kktsos1, dash dot, very thick, mark=square*, mark size=1.5pt] coordinates {(512,100) (4096,100)};
+  \node[anchor=north west] at (rel axis cs:0.03,0.97) {45 items};
+  \end{axis}
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \definecolor{methodcbssd}{RGB}{76,114,176}
+  \definecolor{methodcbasd}{RGB}{221,132,82}
+  \definecolor{methodcbkktmcc}{RGB}{196,78,82}
+  \definecolor{methodcbkktsos1}{RGB}{85,168,104}
+  \definecolor{methodssd}{RGB}{76,114,176}
+  \definecolor{methodasd}{RGB}{221,132,82}
+  \definecolor{methodkktmcc}{RGB}{196,78,82}
+  \definecolor{methodkktsos1}{RGB}{85,168,104}
+  \definecolor{methodiomallssd}{RGB}{76,114,176}
+  \definecolor{methodiomallasd}{RGB}{221,132,82}
+  \definecolor{methodiomallkktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomallkktsos1}{RGB}{85,168,104}
+  \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
+  \definecolor{methodiomtop1asd}{RGB}{221,132,82}
+  \definecolor{methodiomtop1kktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomtop1kktsos1}{RGB}{85,168,104}
+  \begin{axis}[
+    width=0.40\textwidth,
+    height=.52\textwidth,
+    xlabel={Regional assignments},
+    ylabel={Final optimality gap (\%)},
+    tick align=outside,
+    axis lines=left,
+    axis line style={black, line width=0.5pt},
+    grid=both,
+    major grid style={draw=black!8, line width=0.5pt},
+    minor grid style={draw=black!8, line width=0.3pt},
+    tick style={black, line width=0.5pt},
+    tick label style={font=\footnotesize},
+    label style={font=\footnotesize},
+    every axis plot/.append style={line join=round},
+    legend style={draw=none, font=\footnotesize},
+    legend cell align={left},
+    clip marker paths=true,
+    enlarge y limits=0.05,
+    xmode=log,
+    enlarge x limits={lower=0.025,upper=0.05},
+    log basis x=2
+  ]
+  \addplot+[only marks, mark=pentagon*, mark size=1.5pt, mark size=1.3pt, color=methodcbssd, opacity=0.4, forget plot] coordinates {(4,15.013113) (8,73.341139) (16,45.874438) (64,24.193186) (64,85.926437) (64,82.129989) (256,2.5961321) (256,92.845567) (512,99.512088) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodcbssd, dashed, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(4,15.013113) (8,73.341139) (16,45.874438) (64,82.129989) (256,47.720849) (512,99.756044) (4096,100)};
+  \addplot+[only marks, mark=star, mark size=1.5pt, mark size=1.3pt, color=methodcbasd, opacity=0.4, forget plot] coordinates {(2,28.720083) (4,100) (4,19.306666) (4,100) (8,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100) (16,24.467627) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100) (512,100) (512,100) (4096,100)};
+  \addplot+[color=methodcbasd, dashed, very thick, mark=star, mark size=1.5pt] coordinates {(2,28.720083) (4,100) (8,100) (16,100) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=90}, mark size=1.3pt, color=methodcbkktmcc, opacity=0.4, forget plot] coordinates {(8,26.494402) (64,92.84692) (64,92.74488) (256,96.838697) (256,99.375301) (512,100)};
+  \addplot+[color=methodcbkktmcc, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=90}] coordinates {(8,26.494402) (64,92.7959) (256,98.106999) (512,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}, mark size=1.3pt, color=methodcbkktsos1, opacity=0.4, forget plot] coordinates {(2,100) (4,5.4034803) (4,100) (4,100) (8,100) (16,97.769139) (16,100) (16,100) (64,100) (64,100) (64,100) (256,100) (256,100)};
+  \addplot+[color=methodcbkktsos1, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}] coordinates {(2,100) (4,100) (8,100) (16,100) (64,100) (256,100)};
+  \addplot+[only marks, mark=*, mark size=1.5pt, mark size=1.3pt, color=methodssd, opacity=0.4, forget plot] coordinates {(4,65.890918) (8,2.4217849) (8,30.600122) (8,49.353959) (16,51.966085) (64,94.04974) (64,100) (64,100) (64,100) (256,100) (512,100)};
+  \addplot+[color=methodssd, solid, very thick, mark=*, mark size=1.5pt] coordinates {(4,65.890918) (8,30.600122) (16,51.966085) (64,100) (256,100) (512,100)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodasd, opacity=0.4, forget plot] coordinates {(2,60.809463) (2,30.021377) (4,100) (4,100) (4,100) (4,100) (8,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,91.072342) (16,100) (64,100) (64,100) (64,100) (64,100) (256,100)};
+  \addplot+[color=methodasd, solid, very thick, mark=square*, mark size=1.5pt] coordinates {(2,45.41542) (4,100) (8,100) (16,100) (64,100) (256,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark size=1.3pt, color=methodkktmcc, opacity=0.4, forget plot] coordinates {(8,53.385411) (16,28.017487) (16,41.175367) (64,100) (64,100) (64,99.312699) (64,96.968784) (512,100) (512,100)};
+  \addplot+[color=methodkktmcc, solid, very thick, mark=triangle*, mark size=1.5pt] coordinates {(8,53.385411) (16,34.596427) (64,99.656349) (512,100)};
+  \addplot+[only marks, mark=diamond*, mark size=1.5pt, mark size=1.3pt, color=methodkktsos1, opacity=0.4, forget plot] coordinates {(2,100) (4,16.436936) (4,100) (4,100) (8,67.222203) (8,100) (8,100) (8,100) (16,64.919112) (16,100) (16,100) (64,100) (64,100) (64,100)};
+  \addplot+[color=methodkktsos1, solid, very thick, mark=diamond*, mark size=1.5pt] coordinates {(2,100) (4,100) (8,100) (16,100) (64,100)};
+  \addplot+[only marks, mark=diamond, mark size=1.5pt, mark size=1.3pt, color=methodiomallssd, opacity=0.4, forget plot] coordinates {(2,74.550265) (8,84.063902) (8,67.008344) (16,100) (16,89.16079) (16,92.7855) (64,100) (64,84.825181) (256,61.945174) (256,100) (512,98.689769) (512,67.016266) (4096,100) (4096,98.067718)};
+  \addplot+[color=methodiomallssd, dotted, very thick, mark=diamond, mark size=1.5pt] coordinates {(2,74.550265) (8,75.536123) (16,92.7855) (64,92.41259) (256,80.972587) (512,82.853018) (4096,99.033859)};
+  \addplot+[only marks, mark=star, mark size=1.5pt, mark size=1.3pt, color=methodiomallasd, opacity=0.4, forget plot] coordinates {(2,82.073577) (2,27.213975) (4,100) (4,100) (8,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,61.252167) (16,100) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100) (512,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomallasd, dotted, very thick, mark=star, mark size=1.5pt] coordinates {(2,54.643776) (4,100) (8,100) (16,100) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=90}, mark size=1.3pt, color=methodiomallkktmcc, opacity=0.4, forget plot] coordinates {(4,100) (8,100) (16,100) (16,100) (64,100) (64,100) (256,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomallkktmcc, dotted, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=90}] coordinates {(4,100) (8,100) (16,100) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}, mark size=1.3pt, color=methodiomallkktsos1, opacity=0.4, forget plot] coordinates {(16,100) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[color=methodiomallkktsos1, dotted, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}] coordinates {(16,100) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=pentagon*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1ssd, opacity=0.4, forget plot] coordinates {(2,73.806499) (8,83.856494) (8,90.348775) (16,100) (16,96.937896) (16,90.069174) (64,48.706398) (64,97.257275) (64,99.989089) (256,97.565773) (256,100) (512,100) (512,97.635112) (4096,100) (4096,100)};
+  \addplot+[color=methodiomtop1ssd, dash dot, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(2,73.806499) (8,87.102634) (16,96.937896) (64,97.257275) (256,98.782886) (512,98.817556) (4096,100)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1asd, opacity=0.4, forget plot] coordinates {(2,81.523378) (2,27.554731) (4,100) (4,100) (8,100) (8,100) (8,100) (8,96.751548) (16,100) (16,100) (16,96.949029) (16,100) (64,100) (64,95.771928) (64,100) (64,100) (256,100) (256,99.099834) (512,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomtop1asd, dash dot, very thick, mark=square*, mark size=1.5pt] coordinates {(2,54.539055) (4,100) (8,100) (16,100) (64,100) (256,99.549917) (512,100) (4096,100)};
+  \addplot+[only marks, mark=*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1kktmcc, opacity=0.4, forget plot] coordinates {(4,100) (4,100) (8,100) (16,100) (16,100) (64,100) (64,100) (256,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomtop1kktmcc, dash dot, very thick, mark=*, mark size=1.5pt] coordinates {(4,100) (8,100) (16,100) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1kktsos1, opacity=0.4, forget plot] coordinates {(16,100) (64,100) (256,100) (512,100) (4096,100)};
+  \addplot+[color=methodiomtop1kktsos1, dash dot, very thick, mark=square*, mark size=1.5pt] coordinates {(16,100) (64,100) (256,100) (512,100) (4096,100)};
+  \node[anchor=north west] at (rel axis cs:0.03,0.97) {50 items};
+  \end{axis}
+\end{tikzpicture}
+\hfill
+\begin{tikzpicture}[baseline=(current bounding box.north)]
+  \definecolor{methodcbssd}{RGB}{76,114,176}
+  \definecolor{methodcbasd}{RGB}{221,132,82}
+  \definecolor{methodcbkktmcc}{RGB}{196,78,82}
+  \definecolor{methodcbkktsos1}{RGB}{85,168,104}
+  \definecolor{methodssd}{RGB}{76,114,176}
+  \definecolor{methodasd}{RGB}{221,132,82}
+  \definecolor{methodkktmcc}{RGB}{196,78,82}
+  \definecolor{methodkktsos1}{RGB}{85,168,104}
+  \definecolor{methodiomallssd}{RGB}{76,114,176}
+  \definecolor{methodiomallasd}{RGB}{221,132,82}
+  \definecolor{methodiomallkktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
+  \definecolor{methodiomtop1asd}{RGB}{221,132,82}
+  \definecolor{methodiomtop1kktmcc}{RGB}{196,78,82}
+  \begin{axis}[
+    width=0.40\textwidth,
+    height=.52\textwidth,
+    xlabel={Regional assignments},
+    ylabel={Final optimality gap (\%)},
+    tick align=outside,
+    axis lines=left,
+    axis line style={black, line width=0.5pt},
+    grid=both,
+    major grid style={draw=black!8, line width=0.5pt},
+    minor grid style={draw=black!8, line width=0.3pt},
+    tick style={black, line width=0.5pt},
+    tick label style={font=\footnotesize},
+    label style={font=\footnotesize},
+    every axis plot/.append style={line join=round},
+    legend style={draw=none, font=\footnotesize},
+    legend cell align={left},
+    clip marker paths=true,
+    enlarge y limits=0.05,
+    xmode=log,
+    enlarge x limits={lower=0.025,upper=0.05},
+    log basis x=2
+  ]
+  \addplot+[only marks, mark=pentagon*, mark size=1.5pt, mark size=1.3pt, color=methodcbssd, opacity=0.4, forget plot] coordinates {(2,7.516547) (8,0.13602145) (8,9.721214) (16,54.16149) (64,34.055958) (64,0.23913152) (256,89.24971) (256,62.963007) (512,94.686367) (512,74.953865) (4096,100)};
+  \addplot+[color=methodcbssd, dashed, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(2,7.516547) (8,4.9286177) (16,54.16149) (64,17.147545) (256,76.106358) (512,84.820116) (4096,100)};
+  \addplot+[only marks, mark=star, mark size=1.5pt, mark size=1.3pt, color=methodcbasd, opacity=0.4, forget plot] coordinates {(2,14.92709) (4,16.387459) (4,14.892722) (4,100) (4,100) (8,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100) (16,100) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100) (512,100) (512,100)};
+  \addplot+[color=methodcbasd, dashed, very thick, mark=star, mark size=1.5pt] coordinates {(2,14.92709) (4,58.193729) (8,100) (16,100) (64,100) (256,100) (512,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=90}, mark size=1.3pt, color=methodcbkktmcc, opacity=0.4, forget plot] coordinates {(16,33.529831) (64,89.16208) (64,71.91759) (64,72.915841) (64,57.309244) (256,91.689676) (256,90.04389)};
+  \addplot+[color=methodcbkktmcc, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=90}] coordinates {(16,33.529831) (64,72.416716) (256,90.866783)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}, mark size=1.3pt, color=methodcbkktsos1, opacity=0.4, forget plot] coordinates {(2,100) (4,100) (4,100) (4,100) (4,100) (8,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100) (64,100) (256,100)};
+  \addplot+[color=methodcbkktsos1, dashed, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=-90}] coordinates {(2,100) (4,100) (8,100) (16,100) (64,100) (256,100)};
+  \addplot+[only marks, mark=*, mark size=1.5pt, mark size=1.3pt, color=methodssd, opacity=0.4, forget plot] coordinates {(8,87.327854) (16,0.019697744) (64,74.952317) (64,93.864874) (64,61.611562) (64,68.222744) (256,100) (256,100) (512,100)};
+  \addplot+[color=methodssd, solid, very thick, mark=*, mark size=1.5pt] coordinates {(8,87.327854) (16,0.019697744) (64,71.58753) (256,100) (512,100)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodasd, opacity=0.4, forget plot] coordinates {(2,16.072336) (2,66.919545) (4,79.234095) (4,100) (4,100) (4,100) (8,100) (8,100) (8,100) (8,100) (16,100) (16,100) (16,100) (16,100) (64,100) (64,100) (64,100) (64,100) (256,100) (256,100)};
+  \addplot+[color=methodasd, solid, very thick, mark=square*, mark size=1.5pt] coordinates {(2,41.49594) (4,100) (8,100) (16,100) (64,100) (256,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark size=1.3pt, color=methodkktmcc, opacity=0.4, forget plot] coordinates {(8,71.917596) (16,86.102076) (16,79.565951) (16,80.305231) (16,52.272756) (64,100) (64,99.958808) (512,100)};
+  \addplot+[color=methodkktmcc, solid, very thick, mark=triangle*, mark size=1.5pt] coordinates {(8,71.917596) (16,79.935591) (64,99.979404) (512,100)};
+  \addplot+[only marks, mark=diamond*, mark size=1.5pt, mark size=1.3pt, color=methodkktsos1, opacity=0.4, forget plot] coordinates {(2,100) (2,100) (4,100) (4,100) (4,100) (4,100) (8,100) (8,100) (16,100) (16,100) (16,100)};
+  \addplot+[color=methodkktsos1, solid, very thick, mark=diamond*, mark size=1.5pt] coordinates {(2,100) (4,100) (8,100) (16,100)};
+  \addplot+[only marks, mark=diamond, mark size=1.5pt, mark size=1.3pt, color=methodiomallssd, opacity=0.4, forget plot] coordinates {(512,85.901149) (4096,91.328857) (4096,96.769298)};
+  \addplot+[color=methodiomallssd, dotted, very thick, mark=diamond, mark size=1.5pt] coordinates {(512,85.901149) (4096,94.049078)};
+  \addplot+[only marks, mark=star, mark size=1.5pt, mark size=1.3pt, color=methodiomallasd, opacity=0.4, forget plot] coordinates {(64,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomallasd, dotted, very thick, mark=star, mark size=1.5pt] coordinates {(64,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=triangle*, mark size=1.5pt, mark options={rotate=90}, mark size=1.3pt, color=methodiomallkktmcc, opacity=0.4, forget plot] coordinates {(16,100)};
+  \addplot+[color=methodiomallkktmcc, dotted, very thick, mark=triangle*, mark size=1.5pt, mark options={rotate=90}] coordinates {(16,100)};
+  \addplot+[only marks, mark=pentagon*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1ssd, opacity=0.4, forget plot] coordinates {(64,87.867254) (512,83.889358) (4096,97.570124) (4096,95.702529)};
+  \addplot+[color=methodiomtop1ssd, dash dot, very thick, mark=pentagon*, mark size=1.5pt] coordinates {(64,87.867254) (512,83.889358) (4096,96.636326)};
+  \addplot+[only marks, mark=square*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1asd, opacity=0.4, forget plot] coordinates {(64,100) (512,100) (4096,100) (4096,100)};
+  \addplot+[color=methodiomtop1asd, dash dot, very thick, mark=square*, mark size=1.5pt] coordinates {(64,100) (512,100) (4096,100)};
+  \addplot+[only marks, mark=*, mark size=1.5pt, mark size=1.3pt, color=methodiomtop1kktmcc, opacity=0.4, forget plot] coordinates {(16,100)};
+  \addplot+[color=methodiomtop1kktmcc, dash dot, very thick, mark=*, mark size=1.5pt] coordinates {(16,100)};
+  \node[anchor=north west] at (rel axis cs:0.03,0.97) {55 items};
+  \end{axis}
+\end{tikzpicture}
