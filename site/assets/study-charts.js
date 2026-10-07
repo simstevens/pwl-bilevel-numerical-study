@@ -153,6 +153,16 @@
         view.toImageURL(entry[0], entry[0] === "png" ? 2 : 1).then(function (url) { saveUrl(url, "chart." + entry[0]); });
       }));
     });
+    var pdfStatus = document.createElement("span");
+    pdfStatus.className = "study-tikz-status";
+    bar.appendChild(button("Download PDF", function () {
+      pdfStatus.textContent = "Preparing the PDF…";
+      window.StudyPdf.save(view, "chart.pdf").then(
+        function () { pdfStatus.textContent = ""; },
+        function (error) { pdfStatus.textContent = "PDF export failed: " + error; }
+      );
+    }));
+    bar.appendChild(pdfStatus);
     if (container.getAttribute("data-tikz-name")) {
       var status = document.createElement("span");
       status.className = "study-tikz-status";

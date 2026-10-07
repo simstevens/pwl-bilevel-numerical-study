@@ -69,11 +69,11 @@
    }
   }
  ],
- "built_utc": "2026-10-07T10:15:42+00:00",
+ "built_utc": "2026-10-07T11:27:07+00:00",
  "files": {
   "404.html": {
-   "bytes": 15274,
-   "sha256": "d49136c572ba455628eb603a05d7991e73df425734ff395cd52cc2f77e1ffe17"
+   "bytes": 15363,
+   "sha256": "d619769e89ef3bd8a5902a2a601870a044acd6ba775ce62a034289c278aacaa7"
   },
   "assets/explorer.js": {
    "bytes": 8304,
@@ -243,13 +243,17 @@
    "bytes": 591,
    "sha256": "7c8c3aa99f329d7af05d6db9dfbd96a00dd53014ea0d0746be755d30d7bead4f"
   },
+  "assets/pdf-export.js": {
+   "bytes": 4639,
+   "sha256": "e64eb51d285cb8e55455749284be5c8bbc9089e0935ac7eafffc884097d17237"
+  },
   "assets/study-base.js": {
    "bytes": 623,
    "sha256": "c831a237e89c3d768385a973c36616f967f6d085cfabcdf142192295ff9013ad"
   },
   "assets/study-charts.js": {
-   "bytes": 14539,
-   "sha256": "626d2d93ac379f1ac44e4d360ff77b0161111d98d7a1c86dc6e78de103ea54fb"
+   "bytes": 14988,
+   "sha256": "d65cc56ca75731b13557e00e17d001a3d46dc6f564d2bbc846c6b009ff901c73"
   },
   "assets/study.css": {
    "bytes": 2860,
@@ -371,6 +375,30 @@
    "bytes": 272868,
    "sha256": "103a53763cc033bba8d175bf3f0ba597c3505c9b6747dd3f2c7bc2a6bfcc8ae7"
   },
+  "assets/vendor/pdf/DejaVuSans.ttf": {
+   "bytes": 757076,
+   "sha256": "7da195a74c55bef988d0d48f9508bd5d849425c1770dba5d7bfc6ce9ed848954"
+  },
+  "assets/vendor/pdf/LICENSE-dejavu": {
+   "bytes": 8816,
+   "sha256": "7a083b136e64d064794c3419751e5c7dd10d2f64c108fe5ba161eae5e5958a93"
+  },
+  "assets/vendor/pdf/LICENSE-jspdf": {
+   "bytes": 1142,
+   "sha256": "dc388ec35ff463288cdde3588a36fd4ed12a45deff053243b37309acc9ef583b"
+  },
+  "assets/vendor/pdf/LICENSE-svg2pdf": {
+   "bytes": 1126,
+   "sha256": "04db7fb792d065c8c9a0e3a7a8255cd36e32b263ca023cbea10daee4a45132b8"
+  },
+  "assets/vendor/pdf/jspdf.umd.min.js": {
+   "bytes": 420165,
+   "sha256": "e6551fcdc32f09d6853b2c5126d18d01d9447e0da618a41a11ebeee0f6c20d54"
+  },
+  "assets/vendor/pdf/svg2pdf.umd.min.js": {
+   "bytes": 87549,
+   "sha256": "2f10c0d16959e9a0c4cfd8605cfce0830ddc384337f74fa0351a6eff1c1efb8b"
+  },
   "assets/vendor/vega/LICENSE-vega": {
    "bytes": 1533,
    "sha256": "63727832aaf62004a2b249c933e327f3c90caf49e41a72f4bf436edf632cbda8"
@@ -396,12 +424,12 @@
    "sha256": "8f6a3587cf8d4f42c7e08120e3eb05d067e746d554e39d2dcf52acc0bd5ba28f"
   },
   "index.html": {
-   "bytes": 21951,
-   "sha256": "936f3dc186b7b0989bbd44f52b73c17d70d3ecf87f412c7469d865db8f7931d8"
+   "bytes": 22011,
+   "sha256": "50b241b66fca01428f14746d04753354e9438c39590e173b68b8dfdd2191c7f7"
   },
   "search/search_index.json": {
-   "bytes": 48404,
-   "sha256": "672de56a301017eab6def7da1e925d88fe69a5b651de515979d8705c4a6e027b"
+   "bytes": 48486,
+   "sha256": "0e3c9cc6284988beb3e31f795fbc9f4c6df605bc56aa5ce9cffef3221cf29756"
   },
   "sitemap.xml": {
    "bytes": 1831,
@@ -412,8 +440,8 @@
    "sha256": "00ee042f9cc7e67c9acf0754af8b68994d7c5bc1b96f7409bfc160889935cd6d"
   },
   "study/appendix.html": {
-   "bytes": 133810,
-   "sha256": "beb929516b1a744b220a83079851bba456db163dd2a03d471cc207ebda90c9d6"
+   "bytes": 133873,
+   "sha256": "8d42312ffbb614171c846cf6cc0001935cf359e6c786c00528dd073bbd2ccfb2"
   },
   "study/data/agreement.json": {
    "bytes": 492184,
@@ -444,16 +472,16 @@
    "sha256": "961f4c04e129f14d43efc4a800a2e611d7af449fd2e41a49bd7595e4c6e1e148"
   },
   "study/design.html": {
-   "bytes": 19707,
-   "sha256": "b2559c4f668bee47f22859bacd2cea869632c508d086025ab02e200266412317"
+   "bytes": 19770,
+   "sha256": "0ba558ad7b930b0eca4bba41108f0d40c0c302ac555cc70d138252084865047d"
   },
   "study/downloads.html": {
-   "bytes": 22231,
-   "sha256": "e02e9f3260afd446a25eb499a8bc36e51dae42df3a652df07fbca2d8d4cb77df"
+   "bytes": 22376,
+   "sha256": "7f5d0f1a9c28f4261e2d081fad49a785f119c1ca664fc66916137c27321c9e76"
   },
   "study/downloads/knapsack-interdiction-continuous/instances.zip": {
    "bytes": 485562,
-   "sha256": "80fbaf25b60de36b8370137c792c3d4d46c1607dfb9271b9f6681073367e5362"
+   "sha256": "c9478bf717ddb9167eb3cbb25305ba50b5a3b3812b7e36010a7a2892ef62bf56"
   },
   "study/downloads/knapsack-interdiction-continuous/overview.csv": {
    "bytes": 7666,
@@ -465,7 +493,7 @@
   },
   "study/downloads/knapsack-interdiction-integer/instances.zip": {
    "bytes": 498461,
-   "sha256": "8ea33d8e48d528961c7d7532c165950b0cf525ec6552b24ef72ea3608a941bfb"
+   "sha256": "7a75e36de06111ad124b1e728ef65cae961d98cc22aa804985e9d0f960904118"
   },
   "study/downloads/knapsack-interdiction-integer/overview.csv": {
    "bytes": 8683,
@@ -477,7 +505,7 @@
   },
   "study/downloads/xu-wang-continuous/instances.zip": {
    "bytes": 2280021,
-   "sha256": "afd87a5c229d5c5a356ae5c777ff29426eed4ebd9d0a44ef3b04ac96cfc21a57"
+   "sha256": "da8296517559036334c05b741d4d2656cff8929c8871ceb1b8faf57e1f32dff7"
   },
   "study/downloads/xu-wang-continuous/overview.csv": {
    "bytes": 3998,
@@ -489,7 +517,7 @@
   },
   "study/downloads/xu-wang-integer/instances.zip": {
    "bytes": 2289111,
-   "sha256": "5aa8cee70aa805896202d66bc79f293a0b7449ffc45543716e0ee31f79bf72c1"
+   "sha256": "e71b7679001af8ef965b4b75b1013e90470cfd16f9d7ce8755b4e94249552652"
   },
   "study/downloads/xu-wang-integer/overview.csv": {
    "bytes": 4513,
@@ -500,32 +528,32 @@
    "sha256": "8a33997e438f84b0c767cc3f492f0b2307f235e48aea3b08a928e9cc38a6ed80"
   },
   "study/ecdf.html": {
-   "bytes": 42439,
-   "sha256": "d7a0d69b9721448a00b1950a8dfc9cc7f73184ffcfe597b5fec53c38651c9920"
+   "bytes": 42502,
+   "sha256": "a678b11f40b879bc3e625cc73bdfec2b5c06e89743aab8bed0b08acd79a0f639"
   },
   "study/explorer.html": {
-   "bytes": 15445,
-   "sha256": "5d38dbd030aa11485f044b672832cd4053c7276248fd5c93c4e3e26ad56bf97d"
+   "bytes": 15508,
+   "sha256": "fa04364ff6391709a28517f23bbe705ddd719de627357dfa7d0c0055ccf527ec"
   },
   "study/heatmaps.html": {
-   "bytes": 65025,
-   "sha256": "a9dcc69a050fa5c4592a6d9cd56d6c6472d6273456110a6a748f0da8dfb25ae8"
+   "bytes": 65088,
+   "sha256": "a242d3884a3e489218aea591f0c9711c8100945616645b694f07d46efad5ecbb"
   },
   "study/index.html": {
-   "bytes": 16685,
-   "sha256": "82eb10374797306fb72c98b7d3f03dcaae7d2884fb0c66406ef1ff1286603056"
+   "bytes": 16748,
+   "sha256": "584f2588672c2669bf99fb70d26b8c0759adf386d16ede64194dbee0a7b314bd"
   },
   "study/integer-vs-continuous.html": {
-   "bytes": 27798,
-   "sha256": "de9e78d6fcf0f8ac5a0ba41b03b6ae5377312588b80db7d4a4153ec079a5fdfa"
+   "bytes": 27861,
+   "sha256": "ac0959e8e9dfc63259e65ea3fbf256812ad71cf731f9af98b676afeb60f8482a"
   },
   "study/overview.html": {
-   "bytes": 134710,
-   "sha256": "1dee5994575dec34ac866cd252350fce9ff26453dd9f654d0ab76e98763ba3bd"
+   "bytes": 134773,
+   "sha256": "1404f9900b3e4dc2d305f494ba9facbcb257c72b0d0a82a9196b4d5b75827805"
   },
   "study/scatter.html": {
-   "bytes": 22463,
-   "sha256": "6f8c9da75b34f9240e257add3af7d2cc39e5f3a9ebd0e32b49703a534f75bbea"
+   "bytes": 22526,
+   "sha256": "f3fc0ce87bc8da6ffe5e8b2a33cbc22e5e8dc95834fd6c866406ac734879f28a"
   },
   "study/tikz/knapsack-interdiction-continuous/final_gap_by_scale.tikz": {
    "bytes": 52598,
@@ -850,7 +878,7 @@
  },
  "indexable": false,
  "preview": false,
- "release_id": "2026-10-07.3",
+ "release_id": "2026-10-07.4",
  "schema_version": 1,
  "site_url": "https://simstevens.github.io/pwl-bilevel-numerical-study/",
  "target": "study",
@@ -884,6 +912,21 @@
    "file": "katex/contrib/auto-render.min.js",
    "package": "katex",
    "version": "0.19.0"
+  },
+  {
+   "file": "pdf/jspdf.umd.min.js",
+   "package": "jspdf",
+   "version": "4.2.1"
+  },
+  {
+   "file": "pdf/svg2pdf.umd.min.js",
+   "package": "svg2pdf.js",
+   "version": "2.8.1"
+  },
+  {
+   "file": "pdf/DejaVuSans.ttf",
+   "package": "dejavu-fonts-ttf",
+   "version": "2.37.3"
   }
  ]
 }

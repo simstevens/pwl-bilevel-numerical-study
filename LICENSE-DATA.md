@@ -25,7 +25,10 @@ Library: <https://bobilib.org>.
 **Other licenses.** The website's own scripts and style sheets
 (`site/assets/*.js`, `site/assets/study.css`) are distributed under the MIT
 license (`LICENSE`). The bundled libraries keep their own licenses:
-KaTeX (MIT, `site/assets/vendor/katex/LICENSE`) and Vega, Vega-Lite and
-Vega-Embed (BSD-3-Clause, `site/assets/vendor/vega/LICENSE-*`). The theme
+KaTeX (MIT, `site/assets/vendor/katex/LICENSE`); Vega, Vega-Lite and
+Vega-Embed (BSD-3-Clause, `site/assets/vendor/vega/LICENSE-*`); jsPDF and
+svg2pdf.js (MIT, `site/assets/vendor/pdf/LICENSE-jspdf`, `LICENSE-svg2pdf`);
+and the DejaVu Sans font (Bitstream Vera / DejaVu license,
+`site/assets/vendor/pdf/LICENSE-dejavu`). The theme
 files in `site/assets/javascripts/` and `site/assets/stylesheets/` come from
 Material for MkDocs (MIT).
