@@ -69,7 +69,7 @@
    }
   }
  ],
- "built_utc": "2026-10-07T10:12:27+00:00",
+ "built_utc": "2026-10-07T10:15:42+00:00",
  "files": {
   "404.html": {
    "bytes": 15274,
@@ -453,7 +453,7 @@
   },
   "study/downloads/knapsack-interdiction-continuous/instances.zip": {
    "bytes": 485562,
-   "sha256": "103ac00702738187a259e658c4eec53184927a34c9f2d5ec8c4e8606b320b109"
+   "sha256": "80fbaf25b60de36b8370137c792c3d4d46c1607dfb9271b9f6681073367e5362"
   },
   "study/downloads/knapsack-interdiction-continuous/overview.csv": {
    "bytes": 7666,
@@ -465,7 +465,7 @@
   },
   "study/downloads/knapsack-interdiction-integer/instances.zip": {
    "bytes": 498461,
-   "sha256": "419095bd44ede25336dcc1596863cc369195929bf96b0bd4ff9444010db01a75"
+   "sha256": "8ea33d8e48d528961c7d7532c165950b0cf525ec6552b24ef72ea3608a941bfb"
   },
   "study/downloads/knapsack-interdiction-integer/overview.csv": {
    "bytes": 8683,
@@ -477,7 +477,7 @@
   },
   "study/downloads/xu-wang-continuous/instances.zip": {
    "bytes": 2280021,
-   "sha256": "5fa8efbcff7b2e42192a1f7b75686498e9295c37270a00318af2477a411cc4d1"
+   "sha256": "afd87a5c229d5c5a356ae5c777ff29426eed4ebd9d0a44ef3b04ac96cfc21a57"
   },
   "study/downloads/xu-wang-continuous/overview.csv": {
    "bytes": 3998,
@@ -489,7 +489,7 @@
   },
   "study/downloads/xu-wang-integer/instances.zip": {
    "bytes": 2289111,
-   "sha256": "dac3024781027c26c669df91e42bad9adb2dd9091235e4b234362d275170f521"
+   "sha256": "5aa8cee70aa805896202d66bc79f293a0b7449ffc45543716e0ee31f79bf72c1"
   },
   "study/downloads/xu-wang-integer/overview.csv": {
    "bytes": 4513,
@@ -850,7 +850,7 @@
  },
  "indexable": false,
  "preview": false,
- "release_id": "2026-10-07.2",
+ "release_id": "2026-10-07.3",
  "schema_version": 1,
  "site_url": "https://simstevens.github.io/pwl-bilevel-numerical-study/",
  "target": "study",
