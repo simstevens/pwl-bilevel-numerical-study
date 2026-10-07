@@ -18,20 +18,6 @@ data, instances, and solution vectors.
 The code of the solution approaches and of this study will be made available
 once the preprint is published.
 
-## Contents
-
-- `site/`: the published website. It is generated and must not be edited by
-  hand. `site/publication-manifest.json` names the release and its build
-  date, and lists every file with its size and SHA-256 checksum.
-- `.github/workflows/pages.yml`: publishes `site/` to GitHub Pages on every
-  push to `main`. It builds nothing.
-
-The site works offline and on any static file server, for example:
-
-```sh
-python3 -m http.server --directory site
-```
-
 ## License
 
 Data, instances, results, text and figures are distributed under CC BY-SA 4.0;
