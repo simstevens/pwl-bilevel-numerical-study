@@ -254,6 +254,8 @@
   // chart is visible without scrolling. Fonts keep their size.
   var GROW_MINIMUM_WIDTH = 240;
   var GROW_MARGIN = 24;
+  var GROW_RIGHT_PADDING = 16;
+  var NARROW_ASPECT_RATIO = 0.8;
 
   function growWithPage(container, view) {
     var ratio = view.height() / view.width();
@@ -274,7 +276,15 @@
       var availableHeight = window.innerHeight - headerHeight - overheadY - GROW_MARGIN;
       var fittedWidth = Math.max(GROW_MINIMUM_WIDTH, Math.min(availableWidth, availableHeight / ratio));
       var width = Math.floor(fittedWidth * scale);
-      if (width !== view.width()) view.width(width).height(Math.round(width * ratio)).runAsync();
+      var height = Math.round(width * ratio);
+      if (window.matchMedia(NARROW_SCREEN).matches) {
+        // Phones: the legends are below the plot (legendsBelow), so the plot
+        // takes the full width right of the y axis, and the page scrolls.
+        // A taller aspect ratio keeps the curves readable.
+        width = Math.max(GROW_MINIMUM_WIDTH / 2, Math.floor(container.clientWidth - view.origin()[0] - GROW_RIGHT_PADDING));
+        height = Math.round(width * Math.max(ratio, NARROW_ASPECT_RATIO));
+      }
+      if (width !== view.width() || height !== view.height()) view.width(width).height(height).runAsync();
     }
     fit();
     window.addEventListener("resize", fit);

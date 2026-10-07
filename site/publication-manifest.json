@@ -69,7 +69,7 @@
    }
   }
  ],
- "built_utc": "2026-10-07T11:46:16+00:00",
+ "built_utc": "2026-10-07T11:52:54+00:00",
  "files": {
   "404.html": {
    "bytes": 15363,
@@ -252,8 +252,8 @@
    "sha256": "c831a237e89c3d768385a973c36616f967f6d085cfabcdf142192295ff9013ad"
   },
   "assets/study-charts.js": {
-   "bytes": 15625,
-   "sha256": "95bc596bcbf8cdde3250d4368ce9948552b82106a036b5c342fc2a5159e48403"
+   "bytes": 16219,
+   "sha256": "0ed2f347d252a1089e0a218de290d120656b41e9f59928e38878d07ac94f99c0"
   },
   "assets/study.css": {
    "bytes": 3262,
@@ -481,7 +481,7 @@
   },
   "study/downloads/knapsack-interdiction-continuous/instances.zip": {
    "bytes": 485562,
-   "sha256": "5f43c44110a15fc3d768e39c31b498a21305b881f6b5229448d5dfaaaaba5d3d"
+   "sha256": "2cac404b151d495b3214f167f3bb9cd37b94f5578b6efd0d8dbc221ee9d04177"
   },
   "study/downloads/knapsack-interdiction-continuous/overview.csv": {
    "bytes": 7666,
@@ -493,7 +493,7 @@
   },
   "study/downloads/knapsack-interdiction-integer/instances.zip": {
    "bytes": 498461,
-   "sha256": "2eff3392e4510d4d96c2ba9b6896f4fe16d2b3557fa6d21b43b0682c6deaf9d4"
+   "sha256": "04e15815227b2f1fafacc7b575c2e9067f5703d0c48b98add96c838838262be4"
   },
   "study/downloads/knapsack-interdiction-integer/overview.csv": {
    "bytes": 8683,
@@ -505,7 +505,7 @@
   },
   "study/downloads/xu-wang-continuous/instances.zip": {
    "bytes": 2280021,
-   "sha256": "0d33f1974a4d00dbf04cdb32952b7b2b68268ccb2cc2a9b54f6db38d98ab6e4b"
+   "sha256": "c36614ec5fdd5510e39e68fd03379348b400ea7bee5a0e19d187ecb85df5a785"
   },
   "study/downloads/xu-wang-continuous/overview.csv": {
    "bytes": 3998,
@@ -517,7 +517,7 @@
   },
   "study/downloads/xu-wang-integer/instances.zip": {
    "bytes": 2289111,
-   "sha256": "13de9cf040118894b9a10ea200e727f1455969af0fddc053f31e2b8a25aa99d7"
+   "sha256": "26ee9eb0105fe820a091f20276bc72dcf0d288cfe5645862a480ded1205bd1be"
   },
   "study/downloads/xu-wang-integer/overview.csv": {
    "bytes": 4513,
@@ -878,7 +878,7 @@
  },
  "indexable": false,
  "preview": false,
- "release_id": "2026-10-07.5",
+ "release_id": "2026-10-07.6",
  "schema_version": 1,
  "site_url": "https://simstevens.github.io/pwl-bilevel-numerical-study/",
  "target": "study",
