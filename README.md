@@ -1,4 +1,9 @@
-# Bilevel optimization with a piecewise-linear follower — numerical study
+# PWL Bilevel Optimization - A Numerical Study
+
+**Authors:** Henri Lefebvre (LIRMM, University of Montpellier, CNRS, France),
+Oleg Prokopyev (Department of Business Administration, University of Zurich,
+Switzerland), Martin Schmidt and Simon Stevens (Department of Mathematics,
+Trier University, Germany).
 
 This repository hosts the website with the numerical results of our work on
 mixed-integer linear bilevel problems whose follower minimizes a

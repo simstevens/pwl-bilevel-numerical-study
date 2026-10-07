@@ -69,7 +69,7 @@
    }
   }
  ],
- "built_utc": "2026-10-07T10:07:27+00:00",
+ "built_utc": "2026-10-07T10:12:27+00:00",
  "files": {
   "404.html": {
    "bytes": 15274,
@@ -396,12 +396,12 @@
    "sha256": "8f6a3587cf8d4f42c7e08120e3eb05d067e746d554e39d2dcf52acc0bd5ba28f"
   },
   "index.html": {
-   "bytes": 21526,
-   "sha256": "a65feea8868259ed235e2b7fb9a2b15d9f17fa8205692f62448b11ce3a521540"
+   "bytes": 21951,
+   "sha256": "936f3dc186b7b0989bbd44f52b73c17d70d3ecf87f412c7469d865db8f7931d8"
   },
   "search/search_index.json": {
-   "bytes": 48055,
-   "sha256": "4abcd3371fd74fe6fb019b724fb61ab7b10c3b8ce9513b1ea28a3536546da78a"
+   "bytes": 48404,
+   "sha256": "672de56a301017eab6def7da1e925d88fe69a5b651de515979d8705c4a6e027b"
   },
   "sitemap.xml": {
    "bytes": 1831,
@@ -453,7 +453,7 @@
   },
   "study/downloads/knapsack-interdiction-continuous/instances.zip": {
    "bytes": 485562,
-   "sha256": "184b04e112e36bd9bc7549ea751350464b6cd72bad7b20d6ed83bd119c1daef0"
+   "sha256": "103ac00702738187a259e658c4eec53184927a34c9f2d5ec8c4e8606b320b109"
   },
   "study/downloads/knapsack-interdiction-continuous/overview.csv": {
    "bytes": 7666,
@@ -465,7 +465,7 @@
   },
   "study/downloads/knapsack-interdiction-integer/instances.zip": {
    "bytes": 498461,
-   "sha256": "2abc863ec892d8274833060a458e97ba41c38f48cc4ea242aedd1176345d9541"
+   "sha256": "419095bd44ede25336dcc1596863cc369195929bf96b0bd4ff9444010db01a75"
   },
   "study/downloads/knapsack-interdiction-integer/overview.csv": {
    "bytes": 8683,
@@ -477,7 +477,7 @@
   },
   "study/downloads/xu-wang-continuous/instances.zip": {
    "bytes": 2280021,
-   "sha256": "36aebc6595522ea75767059b43196dafee5ec3619eeb69e76e1de326a3011794"
+   "sha256": "5fa8efbcff7b2e42192a1f7b75686498e9295c37270a00318af2477a411cc4d1"
   },
   "study/downloads/xu-wang-continuous/overview.csv": {
    "bytes": 3998,
@@ -489,7 +489,7 @@
   },
   "study/downloads/xu-wang-integer/instances.zip": {
    "bytes": 2289111,
-   "sha256": "b7ec47e6ce8a87bd4a1d06e8a96fa7e4a01aa0c571f02114de2bf51668dba600"
+   "sha256": "dac3024781027c26c669df91e42bad9adb2dd9091235e4b234362d275170f521"
   },
   "study/downloads/xu-wang-integer/overview.csv": {
    "bytes": 4513,
@@ -850,7 +850,7 @@
  },
  "indexable": false,
  "preview": false,
- "release_id": "2026-10-07.1",
+ "release_id": "2026-10-07.2",
  "schema_version": 1,
  "site_url": "https://simstevens.github.io/pwl-bilevel-numerical-study/",
  "target": "study",
