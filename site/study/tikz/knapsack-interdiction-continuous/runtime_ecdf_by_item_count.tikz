@@ -1,19 +1,19 @@
 \begin{tikzpicture}[baseline=(current bounding box.north)]
   \definecolor{methodcbssd}{RGB}{76,114,176}
   \definecolor{methodcbasd}{RGB}{221,132,82}
-  \definecolor{methodcbkktmcc}{RGB}{196,78,82}
+  \definecolor{methodcbkktbigm}{RGB}{196,78,82}
   \definecolor{methodcbkktsos1}{RGB}{85,168,104}
   \definecolor{methodssd}{RGB}{76,114,176}
   \definecolor{methodasd}{RGB}{221,132,82}
-  \definecolor{methodkktmcc}{RGB}{196,78,82}
+  \definecolor{methodkktbigm}{RGB}{196,78,82}
   \definecolor{methodkktsos1}{RGB}{85,168,104}
   \definecolor{methodiomallssd}{RGB}{76,114,176}
   \definecolor{methodiomallasd}{RGB}{221,132,82}
-  \definecolor{methodiomallkktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomallkktbigm}{RGB}{196,78,82}
   \definecolor{methodiomallkktsos1}{RGB}{85,168,104}
   \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
   \definecolor{methodiomtop1asd}{RGB}{221,132,82}
-  \definecolor{methodiomtop1kktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomtop1kktbigm}{RGB}{196,78,82}
   \definecolor{methodiomtop1kktsos1}{RGB}{85,168,104}
   \begin{axis}[
     width=0.40\textwidth,
@@ -49,9 +49,9 @@
 % begin method CB-ASD
   \addplot+[color=methodcbasd, dashed, very thick, const plot, no marks] coordinates {(6.1994323,0) (6.5094039,2.7777778) (20.574343,5.5555556) (3600,5.5555556)};
 % end method CB-ASD
-% begin method CB-KKT-McC
-  \addplot+[color=methodcbkktmcc, dashed, very thick, const plot, no marks] coordinates {(0.098042942,0) (0.10294509,2.7777778) (0.12766409,5.5555556) (23.27279,8.3333333) (23.484654,11.111111) (104.12423,13.888889) (133.53873,16.666667) (223.17745,19.444444) (289.00716,22.222222) (508.78555,25) (590.28284,27.777778) (835.46128,30.555556) (844.00856,33.333333) (2380.1712,36.111111) (3600,36.111111)};
-% end method CB-KKT-McC
+% begin method CB-KKT-BigM
+  \addplot+[color=methodcbkktbigm, dashed, very thick, const plot, no marks] coordinates {(0.098042942,0) (0.10294509,2.7777778) (0.12766409,5.5555556) (23.27279,8.3333333) (23.484654,11.111111) (104.12423,13.888889) (133.53873,16.666667) (223.17745,19.444444) (289.00716,22.222222) (508.78555,25) (590.28284,27.777778) (835.46128,30.555556) (844.00856,33.333333) (2380.1712,36.111111) (3600,36.111111)};
+% end method CB-KKT-BigM
 % begin method CB-KKT-SOS1
   \addplot+[color=methodcbkktsos1, dashed, very thick, const plot, no marks] coordinates {(3.1611829,0) (3.319242,2.7777778) (29.7116,5.5555556) (3600,5.5555556)};
 % end method CB-KKT-SOS1
@@ -61,9 +61,9 @@
 % begin method ASD
   \addplot+[color=methodasd, solid, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method ASD
-% begin method KKT-McC
-  \addplot+[color=methodkktmcc, solid, very thick, const plot, no marks] coordinates {(36.957925,0) (38.805821,2.7777778) (44.809238,5.5555556) (49.075368,8.3333333) (131.1993,11.111111) (168.34737,13.888889) (267.59216,16.666667) (1053.4561,19.444444) (2097.0603,22.222222) (2319.3003,25) (3600,25)};
-% end method KKT-McC
+% begin method KKT-BigM
+  \addplot+[color=methodkktbigm, solid, very thick, const plot, no marks] coordinates {(36.957925,0) (38.805821,2.7777778) (44.809238,5.5555556) (49.075368,8.3333333) (131.1993,11.111111) (168.34737,13.888889) (267.59216,16.666667) (1053.4561,19.444444) (2097.0603,22.222222) (2319.3003,25) (3600,25)};
+% end method KKT-BigM
 % begin method KKT-SOS1
   \addplot+[color=methodkktsos1, solid, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method KKT-SOS1
@@ -73,9 +73,9 @@
 % begin method IOM-All_(ASD)
   \addplot+[color=methodiomallasd, dotted, very thick, const plot, no marks] coordinates {(1.2114332,0) (1.2720049,2.7777778) (1.7167438,5.5555556) (3600,5.5555556)};
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
-  \addplot+[color=methodiomallkktmcc, dotted, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
-% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
+  \addplot+[color=methodiomallkktbigm, dotted, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \addplot+[color=methodiomallkktsos1, dotted, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-All_(KKT-SOS1)
@@ -85,9 +85,9 @@
 % begin method IOM-Top1_(ASD)
   \addplot+[color=methodiomtop1asd, dash dot, very thick, const plot, no marks] coordinates {(1.1315232,0) (1.1880994,2.7777778) (1.7308143,5.5555556) (3600,5.5555556)};
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
-  \addplot+[color=methodiomtop1kktmcc, dash dot, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
-% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
+  \addplot+[color=methodiomtop1kktbigm, dash dot, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \addplot+[color=methodiomtop1kktsos1, dash dot, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-Top1_(KKT-SOS1)
@@ -98,9 +98,9 @@
 % begin method CB-ASD
   \node[text=methodcbasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.83) {2/36};
 % end method CB-ASD
-% begin method CB-KKT-McC
-  \node[text=methodcbkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.78) {13/36};
-% end method CB-KKT-McC
+% begin method CB-KKT-BigM
+  \node[text=methodcbkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.78) {13/36};
+% end method CB-KKT-BigM
 % begin method CB-KKT-SOS1
   \node[text=methodcbkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.73) {2/36};
 % end method CB-KKT-SOS1
@@ -110,9 +110,9 @@
 % begin method ASD
   \node[text=methodasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.63) {0/36};
 % end method ASD
-% begin method KKT-McC
-  \node[text=methodkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.58) {9/36};
-% end method KKT-McC
+% begin method KKT-BigM
+  \node[text=methodkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.58) {9/36};
+% end method KKT-BigM
 % begin method KKT-SOS1
   \node[text=methodkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.53) {0/36};
 % end method KKT-SOS1
@@ -122,9 +122,9 @@
 % begin method IOM-All_(ASD)
   \node[text=methodiomallasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.43) {2/36};
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
-  \node[text=methodiomallkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.38) {0/36};
-% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
+  \node[text=methodiomallkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.38) {0/36};
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \node[text=methodiomallkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.33) {0/36};
 % end method IOM-All_(KKT-SOS1)
@@ -134,9 +134,9 @@
 % begin method IOM-Top1_(ASD)
   \node[text=methodiomtop1asd,anchor=north west,font=\small] at (rel axis cs:0.03,0.23) {2/36};
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
-  \node[text=methodiomtop1kktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.18) {0/36};
-% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
+  \node[text=methodiomtop1kktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.18) {0/36};
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \node[text=methodiomtop1kktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.13) {0/36};
 % end method IOM-Top1_(KKT-SOS1)
@@ -146,19 +146,19 @@
 \begin{tikzpicture}[baseline=(current bounding box.north)]
   \definecolor{methodcbssd}{RGB}{76,114,176}
   \definecolor{methodcbasd}{RGB}{221,132,82}
-  \definecolor{methodcbkktmcc}{RGB}{196,78,82}
+  \definecolor{methodcbkktbigm}{RGB}{196,78,82}
   \definecolor{methodcbkktsos1}{RGB}{85,168,104}
   \definecolor{methodssd}{RGB}{76,114,176}
   \definecolor{methodasd}{RGB}{221,132,82}
-  \definecolor{methodkktmcc}{RGB}{196,78,82}
+  \definecolor{methodkktbigm}{RGB}{196,78,82}
   \definecolor{methodkktsos1}{RGB}{85,168,104}
   \definecolor{methodiomallssd}{RGB}{76,114,176}
   \definecolor{methodiomallasd}{RGB}{221,132,82}
-  \definecolor{methodiomallkktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomallkktbigm}{RGB}{196,78,82}
   \definecolor{methodiomallkktsos1}{RGB}{85,168,104}
   \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
   \definecolor{methodiomtop1asd}{RGB}{221,132,82}
-  \definecolor{methodiomtop1kktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomtop1kktbigm}{RGB}{196,78,82}
   \definecolor{methodiomtop1kktsos1}{RGB}{85,168,104}
   \begin{axis}[
     width=0.40\textwidth,
@@ -194,9 +194,9 @@
 % begin method CB-ASD
   \addplot+[color=methodcbasd, dashed, very thick, const plot, no marks] coordinates {(8.5226552,0) (8.9487879,2.7777778) (14.257835,5.5555556) (28.5073,8.3333333) (96.975308,11.111111) (128.32694,13.888889) (3600,13.888889)};
 % end method CB-ASD
-% begin method CB-KKT-McC
-  \addplot+[color=methodcbkktmcc, dashed, very thick, const plot, no marks] coordinates {(0.85860003,0) (0.90153003,2.7777778) (1.1613431,5.5555556) (1.2146502,8.3333333) (1.295548,11.111111) (1.8162801,13.888889) (4.265856,16.666667) (6.9605319,19.444444) (7.6049089,22.222222) (10.529463,25) (21.078263,27.777778) (22.132188,30.555556) (30.049655,33.333333) (90.028032,36.111111) (103.60392,38.888889) (132.3887,41.666667) (150.90464,44.444444) (164.07867,47.222222) (172.53488,50) (265.12987,52.777778) (276.52767,55.555556) (370.55062,58.333333) (608.14688,61.111111) (1374.1745,63.888889) (1576.9943,66.666667) (2950.8371,69.444444) (3209.197,72.222222) (3600,72.222222)};
-% end method CB-KKT-McC
+% begin method CB-KKT-BigM
+  \addplot+[color=methodcbkktbigm, dashed, very thick, const plot, no marks] coordinates {(0.85860003,0) (0.90153003,2.7777778) (1.1613431,5.5555556) (1.2146502,8.3333333) (1.295548,11.111111) (1.8162801,13.888889) (4.265856,16.666667) (6.9605319,19.444444) (7.6049089,22.222222) (10.529463,25) (21.078263,27.777778) (22.132188,30.555556) (30.049655,33.333333) (90.028032,36.111111) (103.60392,38.888889) (132.3887,41.666667) (150.90464,44.444444) (164.07867,47.222222) (172.53488,50) (265.12987,52.777778) (276.52767,55.555556) (370.55062,58.333333) (608.14688,61.111111) (1374.1745,63.888889) (1576.9943,66.666667) (2950.8371,69.444444) (3209.197,72.222222) (3600,72.222222)};
+% end method CB-KKT-BigM
 % begin method CB-KKT-SOS1
   \addplot+[color=methodcbkktsos1, dashed, very thick, const plot, no marks] coordinates {(1.2401628,0) (1.302171,2.7777778) (1.5999701,5.5555556) (1.9713368,8.3333333) (1.9766178,11.111111) (5.370651,13.888889) (5.6885829,16.666667) (8.67191,19.444444) (9.1850121,22.222222) (3600,22.222222)};
 % end method CB-KKT-SOS1
@@ -206,9 +206,9 @@
 % begin method ASD
   \addplot+[color=methodasd, solid, very thick, const plot, no marks] coordinates {(81.175946,0) (85.234743,2.7777778) (3600,2.7777778)};
 % end method ASD
-% begin method KKT-McC
-  \addplot+[color=methodkktmcc, solid, very thick, const plot, no marks] coordinates {(6.9960533,0) (7.345856,2.7777778) (13.279442,5.5555556) (23.173771,8.3333333) (25.910545,11.111111) (43.710876,13.888889) (54.35434,16.666667) (63.302783,19.444444) (83.236359,22.222222) (97.765626,25) (185.11458,27.777778) (205.24581,30.555556) (232.76424,33.333333) (286.89801,36.111111) (288.84259,38.888889) (483.2264,41.666667) (912.59359,44.444444) (1020.9784,47.222222) (1024.2892,50) (1460.48,52.777778) (3600,52.777778)};
-% end method KKT-McC
+% begin method KKT-BigM
+  \addplot+[color=methodkktbigm, solid, very thick, const plot, no marks] coordinates {(6.9960533,0) (7.345856,2.7777778) (13.279442,5.5555556) (23.173771,8.3333333) (25.910545,11.111111) (43.710876,13.888889) (54.35434,16.666667) (63.302783,19.444444) (83.236359,22.222222) (97.765626,25) (185.11458,27.777778) (205.24581,30.555556) (232.76424,33.333333) (286.89801,36.111111) (288.84259,38.888889) (483.2264,41.666667) (912.59359,44.444444) (1020.9784,47.222222) (1024.2892,50) (1460.48,52.777778) (3600,52.777778)};
+% end method KKT-BigM
 % begin method KKT-SOS1
   \addplot+[color=methodkktsos1, solid, very thick, const plot, no marks] coordinates {(1.1367219,0) (1.193558,2.7777778) (3600,2.7777778)};
 % end method KKT-SOS1
@@ -218,9 +218,9 @@
 % begin method IOM-All_(ASD)
   \addplot+[color=methodiomallasd, dotted, very thick, const plot, no marks] coordinates {(3.4393376,0) (3.6113044,2.7777778) (5.3313463,5.5555556) (48.673681,8.3333333) (470.81243,11.111111) (3528.0958,13.888889) (3600,13.888889)};
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
-  \addplot+[color=methodiomallkktmcc, dotted, very thick, const plot, no marks] coordinates {(247.47752,0) (259.8514,2.7777778) (611.46008,5.5555556) (3600,5.5555556)};
-% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
+  \addplot+[color=methodiomallkktbigm, dotted, very thick, const plot, no marks] coordinates {(247.47752,0) (259.8514,2.7777778) (611.46008,5.5555556) (3600,5.5555556)};
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \addplot+[color=methodiomallkktsos1, dotted, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-All_(KKT-SOS1)
@@ -230,9 +230,9 @@
 % begin method IOM-Top1_(ASD)
   \addplot+[color=methodiomtop1asd, dash dot, very thick, const plot, no marks] coordinates {(4.3609795,0) (4.5790284,2.7777778) (10.923349,5.5555556) (53.50918,8.3333333) (458.82072,11.111111) (3483.7829,13.888889) (3600,13.888889)};
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
-  \addplot+[color=methodiomtop1kktmcc, dash dot, very thick, const plot, no marks] coordinates {(240.01169,0) (252.01227,2.7777778) (624.36929,5.5555556) (3600,5.5555556)};
-% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
+  \addplot+[color=methodiomtop1kktbigm, dash dot, very thick, const plot, no marks] coordinates {(240.01169,0) (252.01227,2.7777778) (624.36929,5.5555556) (3600,5.5555556)};
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \addplot+[color=methodiomtop1kktsos1, dash dot, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-Top1_(KKT-SOS1)
@@ -243,9 +243,9 @@
 % begin method CB-ASD
   \node[text=methodcbasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.83) {5/36};
 % end method CB-ASD
-% begin method CB-KKT-McC
-  \node[text=methodcbkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.78) {26/36};
-% end method CB-KKT-McC
+% begin method CB-KKT-BigM
+  \node[text=methodcbkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.78) {26/36};
+% end method CB-KKT-BigM
 % begin method CB-KKT-SOS1
   \node[text=methodcbkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.73) {8/36};
 % end method CB-KKT-SOS1
@@ -255,9 +255,9 @@
 % begin method ASD
   \node[text=methodasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.63) {1/36};
 % end method ASD
-% begin method KKT-McC
-  \node[text=methodkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.58) {19/36};
-% end method KKT-McC
+% begin method KKT-BigM
+  \node[text=methodkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.58) {19/36};
+% end method KKT-BigM
 % begin method KKT-SOS1
   \node[text=methodkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.53) {1/36};
 % end method KKT-SOS1
@@ -267,9 +267,9 @@
 % begin method IOM-All_(ASD)
   \node[text=methodiomallasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.43) {5/36};
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
-  \node[text=methodiomallkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.38) {2/36};
-% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
+  \node[text=methodiomallkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.38) {2/36};
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \node[text=methodiomallkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.33) {0/36};
 % end method IOM-All_(KKT-SOS1)
@@ -279,9 +279,9 @@
 % begin method IOM-Top1_(ASD)
   \node[text=methodiomtop1asd,anchor=north west,font=\small] at (rel axis cs:0.03,0.23) {5/36};
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
-  \node[text=methodiomtop1kktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.18) {2/36};
-% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
+  \node[text=methodiomtop1kktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.18) {2/36};
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \node[text=methodiomtop1kktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.13) {0/36};
 % end method IOM-Top1_(KKT-SOS1)
@@ -291,19 +291,19 @@
 \begin{tikzpicture}[baseline=(current bounding box.north)]
   \definecolor{methodcbssd}{RGB}{76,114,176}
   \definecolor{methodcbasd}{RGB}{221,132,82}
-  \definecolor{methodcbkktmcc}{RGB}{196,78,82}
+  \definecolor{methodcbkktbigm}{RGB}{196,78,82}
   \definecolor{methodcbkktsos1}{RGB}{85,168,104}
   \definecolor{methodssd}{RGB}{76,114,176}
   \definecolor{methodasd}{RGB}{221,132,82}
-  \definecolor{methodkktmcc}{RGB}{196,78,82}
+  \definecolor{methodkktbigm}{RGB}{196,78,82}
   \definecolor{methodkktsos1}{RGB}{85,168,104}
   \definecolor{methodiomallssd}{RGB}{76,114,176}
   \definecolor{methodiomallasd}{RGB}{221,132,82}
-  \definecolor{methodiomallkktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomallkktbigm}{RGB}{196,78,82}
   \definecolor{methodiomallkktsos1}{RGB}{85,168,104}
   \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
   \definecolor{methodiomtop1asd}{RGB}{221,132,82}
-  \definecolor{methodiomtop1kktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomtop1kktbigm}{RGB}{196,78,82}
   \definecolor{methodiomtop1kktsos1}{RGB}{85,168,104}
   \begin{axis}[
     width=0.40\textwidth,
@@ -339,9 +339,9 @@
 % begin method CB-ASD
   \addplot+[color=methodcbasd, dashed, very thick, const plot, no marks] coordinates {(0.098201888,0) (0.10311198,2.7777778) (1.8609371,5.5555556) (6.3718579,8.3333333) (15.870053,11.111111) (56.392935,13.888889) (119.13098,16.666667) (307.72121,19.444444) (2222.9265,22.222222) (3600,22.222222)};
 % end method CB-ASD
-% begin method CB-KKT-McC
-  \addplot+[color=methodcbkktmcc, dashed, very thick, const plot, no marks] coordinates {(0.020110494,0) (0.021116018,2.7777778) (0.12946701,5.5555556) (0.68548799,8.3333333) (0.73355985,11.111111) (1.255842,13.888889) (1.2890041,16.666667) (1.7867899,19.444444) (5.1181831,22.222222) (6.0214391,25) (18.523887,27.777778) (24.41973,30.555556) (28.956469,33.333333) (30.956359,36.111111) (75.330341,38.888889) (109.76149,41.666667) (117.25902,44.444444) (173.24486,47.222222) (201.88161,50) (286.52501,52.777778) (339.76945,55.555556) (665.70556,58.333333) (840.93816,61.111111) (3293.172,63.888889) (3317.6025,66.666667) (3600,66.666667)};
-% end method CB-KKT-McC
+% begin method CB-KKT-BigM
+  \addplot+[color=methodcbkktbigm, dashed, very thick, const plot, no marks] coordinates {(0.020110494,0) (0.021116018,2.7777778) (0.12946701,5.5555556) (0.68548799,8.3333333) (0.73355985,11.111111) (1.255842,13.888889) (1.2890041,16.666667) (1.7867899,19.444444) (5.1181831,22.222222) (6.0214391,25) (18.523887,27.777778) (24.41973,30.555556) (28.956469,33.333333) (30.956359,36.111111) (75.330341,38.888889) (109.76149,41.666667) (117.25902,44.444444) (173.24486,47.222222) (201.88161,50) (286.52501,52.777778) (339.76945,55.555556) (665.70556,58.333333) (840.93816,61.111111) (3293.172,63.888889) (3317.6025,66.666667) (3600,66.666667)};
+% end method CB-KKT-BigM
 % begin method CB-KKT-SOS1
   \addplot+[color=methodcbkktsos1, dashed, very thick, const plot, no marks] coordinates {(0.057553337,0) (0.060431004,2.7777778) (0.09622097,5.5555556) (0.22620511,8.3333333) (0.23943806,11.111111) (0.25167799,13.888889) (1.8,16.666667) (6.5820689,19.444444) (127.65633,22.222222) (514.17151,25) (3600,25)};
 % end method CB-KKT-SOS1
@@ -351,9 +351,9 @@
 % begin method ASD
   \addplot+[color=methodasd, solid, very thick, const plot, no marks] coordinates {(12.687747,0) (13.322134,2.7777778) (21.494146,5.5555556) (62.461503,8.3333333) (179.22081,11.111111) (1415.1239,13.888889) (1687.6376,16.666667) (3600,16.666667)};
 % end method ASD
-% begin method KKT-McC
-  \addplot+[color=methodkktmcc, solid, very thick, const plot, no marks] coordinates {(0.55170945,0) (0.57929492,2.7777778) (1.4899471,5.5555556) (1.8935819,8.3333333) (2.9848499,11.111111) (3.228266,13.888889) (10.172113,16.666667) (10.854063,19.444444) (18.624602,22.222222) (38.74371,25) (48.229986,27.777778) (80.494233,30.555556) (112.03038,33.333333) (119.90485,36.111111) (323.23862,38.888889) (573.70083,41.666667) (1003.433,44.444444) (1039.9995,47.222222) (1337.4285,50) (3600,50)};
-% end method KKT-McC
+% begin method KKT-BigM
+  \addplot+[color=methodkktbigm, solid, very thick, const plot, no marks] coordinates {(0.55170945,0) (0.57929492,2.7777778) (1.4899471,5.5555556) (1.8935819,8.3333333) (2.9848499,11.111111) (3.228266,13.888889) (10.172113,16.666667) (10.854063,19.444444) (18.624602,22.222222) (38.74371,25) (48.229986,27.777778) (80.494233,30.555556) (112.03038,33.333333) (119.90485,36.111111) (323.23862,38.888889) (573.70083,41.666667) (1003.433,44.444444) (1039.9995,47.222222) (1337.4285,50) (3600,50)};
+% end method KKT-BigM
 % begin method KKT-SOS1
   \addplot+[color=methodkktsos1, solid, very thick, const plot, no marks] coordinates {(0.11663709,0) (0.12246895,2.7777778) (0.46761513,5.5555556) (0.58988595,8.3333333) (0.61239195,11.111111) (2.303323,13.888889) (16.17621,16.666667) (652.59489,19.444444) (3600,19.444444)};
 % end method KKT-SOS1
@@ -363,9 +363,9 @@
 % begin method IOM-All_(ASD)
   \addplot+[color=methodiomallasd, dotted, very thick, const plot, no marks] coordinates {(0.24683058,0) (0.25917211,2.7777778) (3.9752305,5.5555556) (5.2147344,8.3333333) (15.198461,11.111111) (42.098446,13.888889) (46.642173,16.666667) (942.6901,19.444444) (2162.3556,22.222222) (3600,22.222222)};
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
-  \addplot+[color=methodiomallkktmcc, dotted, very thick, const plot, no marks] coordinates {(0.54950603,0) (0.57698133,2.7777778) (3.7979175,5.5555556) (4.1600335,8.3333333) (4.2916574,11.111111) (13.734737,13.888889) (49.043985,16.666667) (185.95636,19.444444) (566.37476,22.222222) (3600,22.222222)};
-% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
+  \addplot+[color=methodiomallkktbigm, dotted, very thick, const plot, no marks] coordinates {(0.54950603,0) (0.57698133,2.7777778) (3.7979175,5.5555556) (4.1600335,8.3333333) (4.2916574,11.111111) (13.734737,13.888889) (49.043985,16.666667) (185.95636,19.444444) (566.37476,22.222222) (3600,22.222222)};
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \addplot+[color=methodiomallkktsos1, dotted, very thick, const plot, no marks] coordinates {(0.12541539,0) (0.13168616,2.7777778) (0.68076175,5.5555556) (1.6141624,8.3333333) (4.9035952,11.111111) (5.2721189,13.888889) (10.995675,16.666667) (43.323586,19.444444) (3600,19.444444)};
 % end method IOM-All_(KKT-SOS1)
@@ -375,9 +375,9 @@
 % begin method IOM-Top1_(ASD)
   \addplot+[color=methodiomtop1asd, dash dot, very thick, const plot, no marks] coordinates {(0.4723194,0) (0.49593536,2.7777778) (5.8775364,5.5555556) (6.0786849,8.3333333) (13.294662,11.111111) (286.80677,13.888889) (892.23093,16.666667) (3561.0403,19.444444) (3600,19.444444)};
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
-  \addplot+[color=methodiomtop1kktmcc, dash dot, very thick, const plot, no marks] coordinates {(0.68546605,0) (0.71973935,2.7777778) (4.0308371,5.5555556) (4.0612842,8.3333333) (4.2923885,11.111111) (10.26814,13.888889) (45.558429,16.666667) (568.65049,19.444444) (1128.2401,22.222222) (3600,22.222222)};
-% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
+  \addplot+[color=methodiomtop1kktbigm, dash dot, very thick, const plot, no marks] coordinates {(0.68546605,0) (0.71973935,2.7777778) (4.0308371,5.5555556) (4.0612842,8.3333333) (4.2923885,11.111111) (10.26814,13.888889) (45.558429,16.666667) (568.65049,19.444444) (1128.2401,22.222222) (3600,22.222222)};
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \addplot+[color=methodiomtop1kktsos1, dash dot, very thick, const plot, no marks] coordinates {(0.14556761,0) (0.152846,2.7777778) (1.0096276,5.5555556) (2.5362593,8.3333333) (5.4712952,11.111111) (6.3728028,13.888889) (10.401079,16.666667) (49.503037,19.444444) (3600,19.444444)};
 % end method IOM-Top1_(KKT-SOS1)
@@ -388,9 +388,9 @@
 % begin method CB-ASD
   \node[text=methodcbasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.83) {8/36};
 % end method CB-ASD
-% begin method CB-KKT-McC
-  \node[text=methodcbkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.78) {24/36};
-% end method CB-KKT-McC
+% begin method CB-KKT-BigM
+  \node[text=methodcbkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.78) {24/36};
+% end method CB-KKT-BigM
 % begin method CB-KKT-SOS1
   \node[text=methodcbkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.73) {9/36};
 % end method CB-KKT-SOS1
@@ -400,9 +400,9 @@
 % begin method ASD
   \node[text=methodasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.63) {6/36};
 % end method ASD
-% begin method KKT-McC
-  \node[text=methodkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.58) {18/36};
-% end method KKT-McC
+% begin method KKT-BigM
+  \node[text=methodkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.58) {18/36};
+% end method KKT-BigM
 % begin method KKT-SOS1
   \node[text=methodkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.53) {7/36};
 % end method KKT-SOS1
@@ -412,9 +412,9 @@
 % begin method IOM-All_(ASD)
   \node[text=methodiomallasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.43) {8/36};
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
-  \node[text=methodiomallkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.38) {8/36};
-% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
+  \node[text=methodiomallkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.38) {8/36};
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \node[text=methodiomallkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.33) {7/36};
 % end method IOM-All_(KKT-SOS1)
@@ -424,9 +424,9 @@
 % begin method IOM-Top1_(ASD)
   \node[text=methodiomtop1asd,anchor=north west,font=\small] at (rel axis cs:0.03,0.23) {7/36};
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
-  \node[text=methodiomtop1kktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.18) {8/36};
-% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
+  \node[text=methodiomtop1kktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.18) {8/36};
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \node[text=methodiomtop1kktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.13) {7/36};
 % end method IOM-Top1_(KKT-SOS1)
@@ -436,19 +436,19 @@
 \begin{tikzpicture}[baseline=(current bounding box.north)]
   \definecolor{methodcbssd}{RGB}{76,114,176}
   \definecolor{methodcbasd}{RGB}{221,132,82}
-  \definecolor{methodcbkktmcc}{RGB}{196,78,82}
+  \definecolor{methodcbkktbigm}{RGB}{196,78,82}
   \definecolor{methodcbkktsos1}{RGB}{85,168,104}
   \definecolor{methodssd}{RGB}{76,114,176}
   \definecolor{methodasd}{RGB}{221,132,82}
-  \definecolor{methodkktmcc}{RGB}{196,78,82}
+  \definecolor{methodkktbigm}{RGB}{196,78,82}
   \definecolor{methodkktsos1}{RGB}{85,168,104}
   \definecolor{methodiomallssd}{RGB}{76,114,176}
   \definecolor{methodiomallasd}{RGB}{221,132,82}
-  \definecolor{methodiomallkktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomallkktbigm}{RGB}{196,78,82}
   \definecolor{methodiomallkktsos1}{RGB}{85,168,104}
   \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
   \definecolor{methodiomtop1asd}{RGB}{221,132,82}
-  \definecolor{methodiomtop1kktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomtop1kktbigm}{RGB}{196,78,82}
   \definecolor{methodiomtop1kktsos1}{RGB}{85,168,104}
   \begin{axis}[
     width=0.40\textwidth,
@@ -484,9 +484,9 @@
 % begin method CB-ASD
   \addplot+[color=methodcbasd, dashed, very thick, const plot, no marks] coordinates {(6.1789086,0) (6.487854,4.1666667) (3600,4.1666667)};
 % end method CB-ASD
-% begin method CB-KKT-McC
-  \addplot+[color=methodcbkktmcc, dashed, very thick, const plot, no marks] coordinates {(2.1299097,0) (2.2364051,4.1666667) (2.8143659,8.3333333) (2.8570881,12.5) (14.121455,16.666667) (22.514996,20.833333) (37.676017,25) (137.00121,29.166667) (181.47921,33.333333) (340.88723,37.5) (367.61553,41.666667) (536.70766,45.833333) (1157.4687,50) (2064.873,54.166667) (3600,54.166667)};
-% end method CB-KKT-McC
+% begin method CB-KKT-BigM
+  \addplot+[color=methodcbkktbigm, dashed, very thick, const plot, no marks] coordinates {(2.1299097,0) (2.2364051,4.1666667) (2.8143659,8.3333333) (2.8570881,12.5) (14.121455,16.666667) (22.514996,20.833333) (37.676017,25) (137.00121,29.166667) (181.47921,33.333333) (340.88723,37.5) (367.61553,41.666667) (536.70766,45.833333) (1157.4687,50) (2064.873,54.166667) (3600,54.166667)};
+% end method CB-KKT-BigM
 % begin method CB-KKT-SOS1
   \addplot+[color=methodcbkktsos1, dashed, very thick, const plot, no marks] coordinates {(2.3575962,0) (2.475476,4.1666667) (2.737973,8.3333333) (3.0584781,12.5) (3600,12.5)};
 % end method CB-KKT-SOS1
@@ -496,9 +496,9 @@
 % begin method ASD
   \addplot+[color=methodasd, solid, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method ASD
-% begin method KKT-McC
-  \addplot+[color=methodkktmcc, solid, very thick, const plot, no marks] coordinates {(9.6460467,0) (10.128349,4.1666667) (19.33747,8.3333333) (73.888057,12.5) (79.011405,16.666667) (113.89317,20.833333) (180.95192,25) (236.33739,29.166667) (311.1259,33.333333) (1094.1986,37.5) (2419.9712,41.666667) (3053.1478,45.833333) (3600,45.833333)};
-% end method KKT-McC
+% begin method KKT-BigM
+  \addplot+[color=methodkktbigm, solid, very thick, const plot, no marks] coordinates {(9.6460467,0) (10.128349,4.1666667) (19.33747,8.3333333) (73.888057,12.5) (79.011405,16.666667) (113.89317,20.833333) (180.95192,25) (236.33739,29.166667) (311.1259,33.333333) (1094.1986,37.5) (2419.9712,41.666667) (3053.1478,45.833333) (3600,45.833333)};
+% end method KKT-BigM
 % begin method KKT-SOS1
   \addplot+[color=methodkktsos1, solid, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method KKT-SOS1
@@ -508,9 +508,9 @@
 % begin method IOM-All_(ASD)
   \addplot+[color=methodiomallasd, dotted, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
-  \addplot+[color=methodiomallkktmcc, dotted, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
-% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
+  \addplot+[color=methodiomallkktbigm, dotted, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \addplot+[color=methodiomallkktsos1, dotted, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-All_(KKT-SOS1)
@@ -520,9 +520,9 @@
 % begin method IOM-Top1_(ASD)
   \addplot+[color=methodiomtop1asd, dash dot, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
-  \addplot+[color=methodiomtop1kktmcc, dash dot, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
-% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
+  \addplot+[color=methodiomtop1kktbigm, dash dot, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \addplot+[color=methodiomtop1kktsos1, dash dot, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-Top1_(KKT-SOS1)
@@ -533,9 +533,9 @@
 % begin method CB-ASD
   \node[text=methodcbasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.83) {1/24};
 % end method CB-ASD
-% begin method CB-KKT-McC
-  \node[text=methodcbkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.78) {13/24};
-% end method CB-KKT-McC
+% begin method CB-KKT-BigM
+  \node[text=methodcbkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.78) {13/24};
+% end method CB-KKT-BigM
 % begin method CB-KKT-SOS1
   \node[text=methodcbkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.73) {3/24};
 % end method CB-KKT-SOS1
@@ -545,9 +545,9 @@
 % begin method ASD
   \node[text=methodasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.63) {0/24};
 % end method ASD
-% begin method KKT-McC
-  \node[text=methodkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.58) {11/24};
-% end method KKT-McC
+% begin method KKT-BigM
+  \node[text=methodkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.58) {11/24};
+% end method KKT-BigM
 % begin method KKT-SOS1
   \node[text=methodkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.53) {0/24};
 % end method KKT-SOS1
@@ -557,9 +557,9 @@
 % begin method IOM-All_(ASD)
   \node[text=methodiomallasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.43) {0/24};
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
-  \node[text=methodiomallkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.38) {0/24};
-% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
+  \node[text=methodiomallkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.38) {0/24};
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \node[text=methodiomallkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.33) {0/24};
 % end method IOM-All_(KKT-SOS1)
@@ -569,9 +569,9 @@
 % begin method IOM-Top1_(ASD)
   \node[text=methodiomtop1asd,anchor=north west,font=\small] at (rel axis cs:0.03,0.23) {0/24};
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
-  \node[text=methodiomtop1kktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.18) {0/24};
-% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
+  \node[text=methodiomtop1kktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.18) {0/24};
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \node[text=methodiomtop1kktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.13) {0/24};
 % end method IOM-Top1_(KKT-SOS1)
@@ -581,19 +581,19 @@
 \begin{tikzpicture}[baseline=(current bounding box.north)]
   \definecolor{methodcbssd}{RGB}{76,114,176}
   \definecolor{methodcbasd}{RGB}{221,132,82}
-  \definecolor{methodcbkktmcc}{RGB}{196,78,82}
+  \definecolor{methodcbkktbigm}{RGB}{196,78,82}
   \definecolor{methodcbkktsos1}{RGB}{85,168,104}
   \definecolor{methodssd}{RGB}{76,114,176}
   \definecolor{methodasd}{RGB}{221,132,82}
-  \definecolor{methodkktmcc}{RGB}{196,78,82}
+  \definecolor{methodkktbigm}{RGB}{196,78,82}
   \definecolor{methodkktsos1}{RGB}{85,168,104}
   \definecolor{methodiomallssd}{RGB}{76,114,176}
   \definecolor{methodiomallasd}{RGB}{221,132,82}
-  \definecolor{methodiomallkktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomallkktbigm}{RGB}{196,78,82}
   \definecolor{methodiomallkktsos1}{RGB}{85,168,104}
   \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
   \definecolor{methodiomtop1asd}{RGB}{221,132,82}
-  \definecolor{methodiomtop1kktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomtop1kktbigm}{RGB}{196,78,82}
   \definecolor{methodiomtop1kktsos1}{RGB}{85,168,104}
   \begin{axis}[
     width=0.40\textwidth,
@@ -629,9 +629,9 @@
 % begin method CB-ASD
   \addplot+[color=methodcbasd, dashed, very thick, const plot, no marks] coordinates {(144.38414,0) (151.60335,4.1666667) (183.02533,8.3333333) (3600,8.3333333)};
 % end method CB-ASD
-% begin method CB-KKT-McC
-  \addplot+[color=methodcbkktmcc, dashed, very thick, const plot, no marks] coordinates {(6.3399058,0) (6.6569011,4.1666667) (7.1299081,8.3333333) (7.331588,12.5) (46.289573,16.666667) (62.363014,20.833333) (74.975192,25) (77.986716,29.166667) (173.04128,33.333333) (212.37942,37.5) (354.00222,41.666667) (375.46147,45.833333) (389.13486,50) (681.575,54.166667) (1317.7896,58.333333) (1682.7785,62.5) (3600,62.5)};
-% end method CB-KKT-McC
+% begin method CB-KKT-BigM
+  \addplot+[color=methodcbkktbigm, dashed, very thick, const plot, no marks] coordinates {(6.3399058,0) (6.6569011,4.1666667) (7.1299081,8.3333333) (7.331588,12.5) (46.289573,16.666667) (62.363014,20.833333) (74.975192,25) (77.986716,29.166667) (173.04128,33.333333) (212.37942,37.5) (354.00222,41.666667) (375.46147,45.833333) (389.13486,50) (681.575,54.166667) (1317.7896,58.333333) (1682.7785,62.5) (3600,62.5)};
+% end method CB-KKT-BigM
 % begin method CB-KKT-SOS1
   \addplot+[color=methodcbkktsos1, dashed, very thick, const plot, no marks] coordinates {(7.4456065,0) (7.8178868,4.1666667) (9.655642,8.3333333) (10.419575,12.5) (41.100272,16.666667) (57.971205,20.833333) (3600,20.833333)};
 % end method CB-KKT-SOS1
@@ -641,9 +641,9 @@
 % begin method ASD
   \addplot+[color=methodasd, solid, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method ASD
-% begin method KKT-McC
-  \addplot+[color=methodkktmcc, solid, very thick, const plot, no marks] coordinates {(5.1956259,0) (5.4554071,4.1666667) (14.32712,8.3333333) (47.177207,12.5) (131.14663,16.666667) (167.88691,20.833333) (220.57066,25) (227.01894,29.166667) (390.7939,33.333333) (938.62414,37.5) (1261.6142,41.666667) (1771.6385,45.833333) (3600,45.833333)};
-% end method KKT-McC
+% begin method KKT-BigM
+  \addplot+[color=methodkktbigm, solid, very thick, const plot, no marks] coordinates {(5.1956259,0) (5.4554071,4.1666667) (14.32712,8.3333333) (47.177207,12.5) (131.14663,16.666667) (167.88691,20.833333) (220.57066,25) (227.01894,29.166667) (390.7939,33.333333) (938.62414,37.5) (1261.6142,41.666667) (1771.6385,45.833333) (3600,45.833333)};
+% end method KKT-BigM
 % begin method KKT-SOS1
   \addplot+[color=methodkktsos1, solid, very thick, const plot, no marks] coordinates {(1.3914181,0) (1.460989,4.1666667) (32.266718,8.3333333) (3600,8.3333333)};
 % end method KKT-SOS1
@@ -653,9 +653,9 @@
 % begin method IOM-All_(ASD)
   \addplot+[color=methodiomallasd, dotted, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
-  \addplot+[color=methodiomallkktmcc, dotted, very thick, const plot, no marks] coordinates {(119.66413,0) (125.64733,4.1666667) (1674.0651,8.3333333) (3600,8.3333333)};
-% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
+  \addplot+[color=methodiomallkktbigm, dotted, very thick, const plot, no marks] coordinates {(119.66413,0) (125.64733,4.1666667) (1674.0651,8.3333333) (3600,8.3333333)};
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \addplot+[color=methodiomallkktsos1, dotted, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-All_(KKT-SOS1)
@@ -665,9 +665,9 @@
 % begin method IOM-Top1_(ASD)
   \addplot+[color=methodiomtop1asd, dash dot, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
-  \addplot+[color=methodiomtop1kktmcc, dash dot, very thick, const plot, no marks] coordinates {(110.93142,0) (116.47799,4.1666667) (3600,4.1666667)};
-% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
+  \addplot+[color=methodiomtop1kktbigm, dash dot, very thick, const plot, no marks] coordinates {(110.93142,0) (116.47799,4.1666667) (3600,4.1666667)};
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \addplot+[color=methodiomtop1kktsos1, dash dot, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-Top1_(KKT-SOS1)
@@ -678,9 +678,9 @@
 % begin method CB-ASD
   \node[text=methodcbasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.83) {2/24};
 % end method CB-ASD
-% begin method CB-KKT-McC
-  \node[text=methodcbkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.78) {15/24};
-% end method CB-KKT-McC
+% begin method CB-KKT-BigM
+  \node[text=methodcbkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.78) {15/24};
+% end method CB-KKT-BigM
 % begin method CB-KKT-SOS1
   \node[text=methodcbkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.73) {5/24};
 % end method CB-KKT-SOS1
@@ -690,9 +690,9 @@
 % begin method ASD
   \node[text=methodasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.63) {0/24};
 % end method ASD
-% begin method KKT-McC
-  \node[text=methodkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.58) {11/24};
-% end method KKT-McC
+% begin method KKT-BigM
+  \node[text=methodkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.58) {11/24};
+% end method KKT-BigM
 % begin method KKT-SOS1
   \node[text=methodkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.53) {2/24};
 % end method KKT-SOS1
@@ -702,9 +702,9 @@
 % begin method IOM-All_(ASD)
   \node[text=methodiomallasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.43) {0/24};
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
-  \node[text=methodiomallkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.38) {2/24};
-% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
+  \node[text=methodiomallkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.38) {2/24};
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \node[text=methodiomallkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.33) {0/24};
 % end method IOM-All_(KKT-SOS1)
@@ -714,9 +714,9 @@
 % begin method IOM-Top1_(ASD)
   \node[text=methodiomtop1asd,anchor=north west,font=\small] at (rel axis cs:0.03,0.23) {0/24};
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
-  \node[text=methodiomtop1kktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.18) {1/24};
-% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
+  \node[text=methodiomtop1kktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.18) {1/24};
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \node[text=methodiomtop1kktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.13) {0/24};
 % end method IOM-Top1_(KKT-SOS1)
@@ -726,19 +726,19 @@
 \begin{tikzpicture}[baseline=(current bounding box.north)]
   \definecolor{methodcbssd}{RGB}{76,114,176}
   \definecolor{methodcbasd}{RGB}{221,132,82}
-  \definecolor{methodcbkktmcc}{RGB}{196,78,82}
+  \definecolor{methodcbkktbigm}{RGB}{196,78,82}
   \definecolor{methodcbkktsos1}{RGB}{85,168,104}
   \definecolor{methodssd}{RGB}{76,114,176}
   \definecolor{methodasd}{RGB}{221,132,82}
-  \definecolor{methodkktmcc}{RGB}{196,78,82}
+  \definecolor{methodkktbigm}{RGB}{196,78,82}
   \definecolor{methodkktsos1}{RGB}{85,168,104}
   \definecolor{methodiomallssd}{RGB}{76,114,176}
   \definecolor{methodiomallasd}{RGB}{221,132,82}
-  \definecolor{methodiomallkktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomallkktbigm}{RGB}{196,78,82}
   \definecolor{methodiomallkktsos1}{RGB}{85,168,104}
   \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
   \definecolor{methodiomtop1asd}{RGB}{221,132,82}
-  \definecolor{methodiomtop1kktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomtop1kktbigm}{RGB}{196,78,82}
   \definecolor{methodiomtop1kktsos1}{RGB}{85,168,104}
   \begin{axis}[
     width=0.40\textwidth,
@@ -774,9 +774,9 @@
 % begin method CB-ASD
   \addplot+[color=methodcbasd, dashed, very thick, const plot, no marks] coordinates {(1909.1366,0) (2004.5934,4.1666667) (3600,4.1666667)};
 % end method CB-ASD
-% begin method CB-KKT-McC
-  \addplot+[color=methodcbkktmcc, dashed, very thick, const plot, no marks] coordinates {(2.3589486,0) (2.476896,4.1666667) (102.6,8.3333333) (105.16425,12.5) (126.17829,16.666667) (390.83394,20.833333) (391.27766,25) (444.31651,29.166667) (541.64822,33.333333) (584.26554,37.5) (924.29729,41.666667) (1657.6511,45.833333) (2351.0668,50) (3491.5185,54.166667) (3600,54.166667)};
-% end method CB-KKT-McC
+% begin method CB-KKT-BigM
+  \addplot+[color=methodcbkktbigm, dashed, very thick, const plot, no marks] coordinates {(2.3589486,0) (2.476896,4.1666667) (102.6,8.3333333) (105.16425,12.5) (126.17829,16.666667) (390.83394,20.833333) (391.27766,25) (444.31651,29.166667) (541.64822,33.333333) (584.26554,37.5) (924.29729,41.666667) (1657.6511,45.833333) (2351.0668,50) (3491.5185,54.166667) (3600,54.166667)};
+% end method CB-KKT-BigM
 % begin method CB-KKT-SOS1
   \addplot+[color=methodcbkktsos1, dashed, very thick, const plot, no marks] coordinates {(2.8349561,0) (2.9767039,4.1666667) (3600,4.1666667)};
 % end method CB-KKT-SOS1
@@ -786,9 +786,9 @@
 % begin method ASD
   \addplot+[color=methodasd, solid, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method ASD
-% begin method KKT-McC
-  \addplot+[color=methodkktmcc, solid, very thick, const plot, no marks] coordinates {(21.358728,0) (22.426665,4.1666667) (45.651194,8.3333333) (102.47757,12.5) (127.83398,16.666667) (129.91595,20.833333) (1064.3359,25) (2179.9829,29.166667) (3294.1884,33.333333) (3512.457,37.5) (3600,37.5)};
-% end method KKT-McC
+% begin method KKT-BigM
+  \addplot+[color=methodkktbigm, solid, very thick, const plot, no marks] coordinates {(21.358728,0) (22.426665,4.1666667) (45.651194,8.3333333) (102.47757,12.5) (127.83398,16.666667) (129.91595,20.833333) (1064.3359,25) (2179.9829,29.166667) (3294.1884,33.333333) (3512.457,37.5) (3600,37.5)};
+% end method KKT-BigM
 % begin method KKT-SOS1
   \addplot+[color=methodkktsos1, solid, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method KKT-SOS1
@@ -798,9 +798,9 @@
 % begin method IOM-All_(ASD)
   \addplot+[color=methodiomallasd, dotted, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
-  \addplot+[color=methodiomallkktmcc, dotted, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
-% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
+  \addplot+[color=methodiomallkktbigm, dotted, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \addplot+[color=methodiomallkktsos1, dotted, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-All_(KKT-SOS1)
@@ -810,9 +810,9 @@
 % begin method IOM-Top1_(ASD)
   \addplot+[color=methodiomtop1asd, dash dot, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
-  \addplot+[color=methodiomtop1kktmcc, dash dot, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
-% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
+  \addplot+[color=methodiomtop1kktbigm, dash dot, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \addplot+[color=methodiomtop1kktsos1, dash dot, very thick, const plot, no marks] coordinates {(0.020110494,0) (3600,0)};
 % end method IOM-Top1_(KKT-SOS1)
@@ -823,9 +823,9 @@
 % begin method CB-ASD
   \node[text=methodcbasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.83) {1/24};
 % end method CB-ASD
-% begin method CB-KKT-McC
-  \node[text=methodcbkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.78) {13/24};
-% end method CB-KKT-McC
+% begin method CB-KKT-BigM
+  \node[text=methodcbkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.78) {13/24};
+% end method CB-KKT-BigM
 % begin method CB-KKT-SOS1
   \node[text=methodcbkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.73) {1/24};
 % end method CB-KKT-SOS1
@@ -835,9 +835,9 @@
 % begin method ASD
   \node[text=methodasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.63) {0/24};
 % end method ASD
-% begin method KKT-McC
-  \node[text=methodkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.58) {9/24};
-% end method KKT-McC
+% begin method KKT-BigM
+  \node[text=methodkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.58) {9/24};
+% end method KKT-BigM
 % begin method KKT-SOS1
   \node[text=methodkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.53) {0/24};
 % end method KKT-SOS1
@@ -847,9 +847,9 @@
 % begin method IOM-All_(ASD)
   \node[text=methodiomallasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.43) {0/24};
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
-  \node[text=methodiomallkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.38) {0/24};
-% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
+  \node[text=methodiomallkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.38) {0/24};
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \node[text=methodiomallkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.33) {0/24};
 % end method IOM-All_(KKT-SOS1)
@@ -859,9 +859,9 @@
 % begin method IOM-Top1_(ASD)
   \node[text=methodiomtop1asd,anchor=north west,font=\small] at (rel axis cs:0.03,0.23) {0/24};
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
-  \node[text=methodiomtop1kktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.18) {0/24};
-% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
+  \node[text=methodiomtop1kktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.18) {0/24};
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \node[text=methodiomtop1kktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.13) {0/24};
 % end method IOM-Top1_(KKT-SOS1)

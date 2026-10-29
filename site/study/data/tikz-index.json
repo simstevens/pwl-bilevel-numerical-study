@@ -113,9 +113,9 @@
    "colour": "methodasd"
   },
   {
-   "key": "KKT-McC",
-   "label": "KKT-McC",
-   "colour": "methodkktmcc"
+   "key": "KKT-BigM",
+   "label": "KKT-BigM",
+   "colour": "methodkktbigm"
   },
   {
    "key": "KKT-SOS1",
@@ -133,9 +133,9 @@
    "colour": "methodcbasd"
   },
   {
-   "key": "CB-KKT-McC",
-   "label": "CB-KKT-McC",
-   "colour": "methodcbkktmcc"
+   "key": "CB-KKT-BigM",
+   "label": "CB-KKT-BigM",
+   "colour": "methodcbkktbigm"
   },
   {
    "key": "CB-KKT-SOS1",
@@ -158,9 +158,9 @@
    "colour": "methodiomallasd"
   },
   {
-   "key": "IOM-All_(KKT-McC)",
-   "label": "IOM-All (KKT-McC)",
-   "colour": "methodiomallkktmcc"
+   "key": "IOM-All_(KKT-BigM)",
+   "label": "IOM-All (KKT-BigM)",
+   "colour": "methodiomallkktbigm"
   },
   {
    "key": "IOM-All_(KKT-SOS1)",
@@ -183,9 +183,9 @@
    "colour": "methodiomtop1asd"
   },
   {
-   "key": "IOM-Top1_(KKT-McC)",
-   "label": "IOM-Top1 (KKT-McC)",
-   "colour": "methodiomtop1kktmcc"
+   "key": "IOM-Top1_(KKT-BigM)",
+   "label": "IOM-Top1 (KKT-BigM)",
+   "colour": "methodiomtop1kktbigm"
   },
   {
    "key": "IOM-Top1_(KKT-SOS1)",

@@ -757,7 +757,7 @@ program. With computable constants (an exact penalty <span class="arithmatex">\(
 values <span class="arithmatex">\(M_z\)</span>, <span class="arithmatex">\(M_s\)</span>), the bilevel problem is equivalent to a
 multi-follower model that selects one assignment. Each follower LP is then
 replaced by strong duality (aggregated, or separate for every follower) or by
-KKT conditions (complementarity via SOS1 or binary McCormick constraints).</p>
+KKT conditions (complementarity via SOS1 or big-M constraints).</p>
 <p><strong>Convex-block aggregation.</strong> Adjacent pieces with nondecreasing slopes form a
 convex block, on which <span class="arithmatex">\(\varphi_i\)</span> is convex and can be modelled by one
 epigraph variable. Writing the reformulation over joint block choices
@@ -774,8 +774,8 @@ exact is revealed. Since there are finitely many blocks, the method
 terminates. Its purpose is to certify optimality before all blocks are
 revealed.</p>
 <p><strong>Complexity.</strong> The problem is <span class="arithmatex">\(\Sigma_2^p\)</span>-hard in general, even with only
-two pieces per PWL term; with convex PWL terms it is NP-hard; and with
-continuous leader variables, fixed <span class="arithmatex">\(n_y\)</span>, and fixed piece counts it is
+two pieces per PWL term; with convex PWL terms it is NP-complete; and with
+continuous leader variables, fixed <span class="arithmatex">\(n_y\)</span>, and fixed numbers of convex blocks it is
 solvable in polynomial time.</p>
 <h2 id="this-website">This website<a class="headerlink" href="#this-website" title="Permanent link">&para;</a></h2>
 <ul>

@@ -1,11 +1,11 @@
 \begin{tikzpicture}[baseline=(current bounding box.north)]
   \definecolor{methodiomallssd}{RGB}{76,114,176}
   \definecolor{methodiomallasd}{RGB}{221,132,82}
-  \definecolor{methodiomallkktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomallkktbigm}{RGB}{196,78,82}
   \definecolor{methodiomallkktsos1}{RGB}{85,168,104}
   \definecolor{methodiomtop1ssd}{RGB}{76,114,176}
   \definecolor{methodiomtop1asd}{RGB}{221,132,82}
-  \definecolor{methodiomtop1kktmcc}{RGB}{196,78,82}
+  \definecolor{methodiomtop1kktbigm}{RGB}{196,78,82}
   \definecolor{methodiomtop1kktsos1}{RGB}{85,168,104}
   \begin{axis}[
     width=0.85\textwidth,
@@ -39,9 +39,9 @@
 % begin method IOM-All_(ASD)
   \addplot+[color=methodiomallasd, dotted, very thick, const plot, no marks] coordinates {(1.9047619,0) (2,0.55555556) (2,1.1111111) (2,1.6666667) (2,2.2222222) (2,2.7777778) (2,3.3333333) (2,3.8888889) (2,4.4444444) (3,5) (3,5.5555556) (3,6.1111111) (3,6.6666667) (4,7.2222222) (4,7.7777778) (5,8.3333333) (5,8.3333333) (10,8.3333333)};
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
-  \addplot+[color=methodiomallkktmcc, dotted, very thick, const plot, no marks] coordinates {(1.9047619,0) (2,0.55555556) (3,1.1111111) (3,1.6666667) (3,2.2222222) (3,2.7777778) (3,3.3333333) (3,3.8888889) (3,4.4444444) (3,5) (4,5.5555556) (4,6.1111111) (5,6.6666667) (5,6.6666667) (10,6.6666667)};
-% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
+  \addplot+[color=methodiomallkktbigm, dotted, very thick, const plot, no marks] coordinates {(1.9047619,0) (2,0.55555556) (3,1.1111111) (3,1.6666667) (3,2.2222222) (3,2.7777778) (3,3.3333333) (3,3.8888889) (3,4.4444444) (3,5) (4,5.5555556) (4,6.1111111) (5,6.6666667) (5,6.6666667) (10,6.6666667)};
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \addplot+[color=methodiomallkktsos1, dotted, very thick, const plot, no marks] coordinates {(0.95238095,0) (1,0.55555556) (2,1.1111111) (3,1.6666667) (3,2.2222222) (3,2.7777778) (3,3.3333333) (5,3.8888889) (5,3.8888889) (10,3.8888889)};
 % end method IOM-All_(KKT-SOS1)
@@ -51,9 +51,9 @@
 % begin method IOM-Top1_(ASD)
   \addplot+[color=methodiomtop1asd, dash dot, very thick, const plot, no marks] coordinates {(1.9047619,0) (2,0.55555556) (2,1.1111111) (2,1.6666667) (3,2.2222222) (3,2.7777778) (3,3.3333333) (3,3.8888889) (4,4.4444444) (4,5) (4,5.5555556) (4,6.1111111) (5,6.6666667) (5,7.2222222) (7,7.7777778) (8,7.7777778) (10,7.7777778)};
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
-  \addplot+[color=methodiomtop1kktmcc, dash dot, very thick, const plot, no marks] coordinates {(2.8571429,0) (3,0.55555556) (3,1.1111111) (3,1.6666667) (3,2.2222222) (3,2.7777778) (4,3.3333333) (5,3.8888889) (5,4.4444444) (6,5) (6,5.5555556) (7,6.1111111) (8,6.1111111) (10,6.1111111)};
-% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
+  \addplot+[color=methodiomtop1kktbigm, dash dot, very thick, const plot, no marks] coordinates {(2.8571429,0) (3,0.55555556) (3,1.1111111) (3,1.6666667) (3,2.2222222) (3,2.7777778) (4,3.3333333) (5,3.8888889) (5,4.4444444) (6,5) (6,5.5555556) (7,6.1111111) (8,6.1111111) (10,6.1111111)};
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \addplot+[color=methodiomtop1kktsos1, dash dot, very thick, const plot, no marks] coordinates {(0.95238095,0) (1,0.55555556) (3,1.1111111) (3,1.6666667) (3,2.2222222) (5,2.7777778) (5,3.3333333) (7,3.8888889) (7,3.8888889) (10,3.8888889)};
 % end method IOM-Top1_(KKT-SOS1)
@@ -63,9 +63,9 @@
 % begin method IOM-All_(ASD)
   \node[text=methodiomallasd,anchor=north west,font=\small] at (rel axis cs:0.03,0.8) {15/180};
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
-  \node[text=methodiomallkktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.72) {12/180};
-% end method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
+  \node[text=methodiomallkktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.72) {12/180};
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \node[text=methodiomallkktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.64) {7/180};
 % end method IOM-All_(KKT-SOS1)
@@ -75,9 +75,9 @@
 % begin method IOM-Top1_(ASD)
   \node[text=methodiomtop1asd,anchor=north west,font=\small] at (rel axis cs:0.03,0.48) {14/180};
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
-  \node[text=methodiomtop1kktmcc,anchor=north west,font=\small] at (rel axis cs:0.03,0.4) {11/180};
-% end method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
+  \node[text=methodiomtop1kktbigm,anchor=north west,font=\small] at (rel axis cs:0.03,0.4) {11/180};
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \node[text=methodiomtop1kktsos1,anchor=north west,font=\small] at (rel axis cs:0.03,0.32) {7/180};
 % end method IOM-Top1_(KKT-SOS1)

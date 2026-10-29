@@ -1,7 +1,7 @@
 \begin{tikzpicture}
   \definecolor{masterseparatesd}{RGB}{76,114,176}
   \definecolor{masteraggregatedsd}{RGB}{221,132,82}
-  \definecolor{masterkktmccormick}{RGB}{196,78,82}
+  \definecolor{masterkktbigm}{RGB}{196,78,82}
   \definecolor{masterkktsos1}{RGB}{85,168,104}
   \definecolor{mastermibs}{RGB}{129,114,179}
   \begin{axis}[hide axis,scale only axis,width=.85\textwidth,height=0.6cm,xmin=0,xmax=1,ymin=0,ymax=1,
@@ -17,9 +17,9 @@
   \addlegendimage{color=masteraggregatedsd, solid, very thick, no marks}
   \addlegendentry{Aggregated SD}
   % end group
-  % begin group IOM-All_(KKT-McC) IOM-Top1_(KKT-McC)
-  \addlegendimage{color=masterkktmccormick, solid, very thick, no marks}
-  \addlegendentry{KKT McCormick}
+  % begin group IOM-All_(KKT-BigM) IOM-Top1_(KKT-BigM)
+  \addlegendimage{color=masterkktbigm, solid, very thick, no marks}
+  \addlegendentry{KKT big-M}
   % end group
   % begin group IOM-All_(KKT-SOS1) IOM-Top1_(KKT-SOS1)
   \addlegendimage{color=masterkktsos1, solid, very thick, no marks}
@@ -35,11 +35,11 @@
     legend cell align={left}]
   \addlegendimage{empty legend}
   \addlegendentry{Method:}
-  % begin group IOM-All_(SSD) IOM-All_(ASD) IOM-All_(KKT-McC) IOM-All_(KKT-SOS1) IOM-All_(MibS)
+  % begin group IOM-All_(SSD) IOM-All_(ASD) IOM-All_(KKT-BigM) IOM-All_(KKT-SOS1) IOM-All_(MibS)
   \addlegendimage{color=black, dotted, very thick, no marks}
   \addlegendentry{OOV refine-all}
   % end group
-  % begin group IOM-Top1_(SSD) IOM-Top1_(ASD) IOM-Top1_(KKT-McC) IOM-Top1_(KKT-SOS1) IOM-Top1_(MibS)
+  % begin group IOM-Top1_(SSD) IOM-Top1_(ASD) IOM-Top1_(KKT-BigM) IOM-Top1_(KKT-SOS1) IOM-Top1_(MibS)
   \addlegendimage{color=black, dash dot, very thick, no marks}
   \addlegendentry{OOV TOP-1 best-bound}
   % end group

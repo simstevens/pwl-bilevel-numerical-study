@@ -6,16 +6,16 @@
 % begin group IOM-All_(ASD) IOM-Top1_(ASD)
   \node[anchor=south, font=\footnotesize] at (3.75cm,0.15cm) {Aggregated SD}; % grid column=1
 % end group
-% begin group IOM-All_(KKT-McC) IOM-Top1_(KKT-McC)
-  \node[anchor=south, font=\footnotesize] at (6.5cm,0.15cm) {KKT McCormick}; % grid column=2
+% begin group IOM-All_(KKT-BigM) IOM-Top1_(KKT-BigM)
+  \node[anchor=south, font=\footnotesize] at (6.5cm,0.15cm) {KKT big-M}; % grid column=2
 % end group
 % begin group IOM-All_(KKT-SOS1) IOM-Top1_(KKT-SOS1)
   \node[anchor=south, font=\footnotesize] at (9.25cm,0.15cm) {KKT SOS1}; % grid column=3
 % end group
-% begin group IOM-All_(SSD) IOM-All_(ASD) IOM-All_(KKT-McC) IOM-All_(KKT-SOS1)
+% begin group IOM-All_(SSD) IOM-All_(ASD) IOM-All_(KKT-BigM) IOM-All_(KKT-SOS1)
   \node[anchor=south, rotate=90, font=\footnotesize] at (-0.95cm,-1cm) {OOV refine-all}; % grid row=0
 % end group
-% begin group IOM-Top1_(SSD) IOM-Top1_(ASD) IOM-Top1_(KKT-McC) IOM-Top1_(KKT-SOS1)
+% begin group IOM-Top1_(SSD) IOM-Top1_(ASD) IOM-Top1_(KKT-BigM) IOM-Top1_(KKT-SOS1)
   \node[anchor=south, rotate=90, font=\footnotesize] at (-0.95cm,-3.75cm) {OOV TOP-1 best-bound}; % grid row=1
 % end group
 % begin method IOM-All_(SSD)
@@ -71,7 +71,7 @@
     \addplot[scatter, only marks, mark=*, mark size=3.6pt, point meta=explicit, scatter/use mapped color={draw=mapped color, fill=mapped color}] coordinates {(0,0) [2] (1,0) [4] (2,0) [5] (0,1) [2] (1,1) [4] (0,2) [2] (0,3) [3]};
   \end{axis}
 % end method IOM-All_(ASD)
-% begin method IOM-All_(KKT-McC)
+% begin method IOM-All_(KKT-BigM)
   \begin{axis}[
     scale only axis,
     width=2cm,
@@ -96,7 +96,7 @@
   ]
     \addplot[scatter, only marks, mark=*, mark size=3.6pt, point meta=explicit, scatter/use mapped color={draw=mapped color, fill=mapped color}] coordinates {(0,0) [3] (1,0) [3.5] (2,0) [5] (0,1) [2.5] (1,1) [4] (0,2) [3] (1,2) [3] (0,3) [3]};
   \end{axis}
-% end method IOM-All_(KKT-McC)
+% end method IOM-All_(KKT-BigM)
 % begin method IOM-All_(KKT-SOS1)
   \begin{axis}[
     scale only axis,
@@ -178,7 +178,7 @@
     \addplot[scatter, only marks, mark=*, mark size=3.6pt, point meta=explicit, scatter/use mapped color={draw=mapped color, fill=mapped color}] coordinates {(0,0) [2] (1,0) [4] (2,0) [5] (0,1) [3] (0,2) [4] (0,3) [7]};
   \end{axis}
 % end method IOM-Top1_(ASD)
-% begin method IOM-Top1_(KKT-McC)
+% begin method IOM-Top1_(KKT-BigM)
   \begin{axis}[
     scale only axis,
     width=2cm,
@@ -204,7 +204,7 @@
   ]
     \addplot[scatter, only marks, mark=*, mark size=3.6pt, point meta=explicit, scatter/use mapped color={draw=mapped color, fill=mapped color}] coordinates {(0,0) [3] (1,0) [3.5] (2,0) [5] (0,1) [3] (1,1) [6] (0,2) [5] (1,2) [7] (0,3) [6]};
   \end{axis}
-% end method IOM-Top1_(KKT-McC)
+% end method IOM-Top1_(KKT-BigM)
 % begin method IOM-Top1_(KKT-SOS1)
   \begin{axis}[
     scale only axis,

@@ -1,7 +1,7 @@
 \begin{tikzpicture}
   \definecolor{masterseparatesd}{RGB}{76,114,176}
   \definecolor{masteraggregatedsd}{RGB}{221,132,82}
-  \definecolor{masterkktmccormick}{RGB}{196,78,82}
+  \definecolor{masterkktbigm}{RGB}{196,78,82}
   \definecolor{masterkktsos1}{RGB}{85,168,104}
   \definecolor{mastermibs}{RGB}{129,114,179}
   \begin{axis}[hide axis,scale only axis,width=.85\textwidth,height=0.6cm,xmin=0,xmax=1,ymin=0,ymax=1,
@@ -17,9 +17,9 @@
   \addlegendimage{color=masteraggregatedsd, solid, very thick, no marks}
   \addlegendentry{Aggregated SD}
   % end group
-  % begin group CB-KKT-McC KKT-McC
-  \addlegendimage{color=masterkktmccormick, solid, very thick, no marks}
-  \addlegendentry{KKT McCormick}
+  % begin group CB-KKT-BigM KKT-BigM
+  \addlegendimage{color=masterkktbigm, solid, very thick, no marks}
+  \addlegendentry{KKT big-M}
   % end group
   % begin group CB-KKT-SOS1 KKT-SOS1
   \addlegendimage{color=masterkktsos1, solid, very thick, no marks}
@@ -35,11 +35,11 @@
     legend cell align={left}]
   \addlegendimage{empty legend}
   \addlegendentry{Method:}
-  % begin group SSD ASD KKT-McC KKT-SOS1 MibS
+  % begin group SSD ASD KKT-BigM KKT-SOS1 MibS
   \addlegendimage{color=black, solid, very thick, no marks}
   \addlegendentry{Piece}
   % end group
-  % begin group CB-SSD CB-ASD CB-KKT-McC CB-KKT-SOS1
+  % begin group CB-SSD CB-ASD CB-KKT-BigM CB-KKT-SOS1
   \addlegendimage{color=black, dashed, very thick, no marks}
   \addlegendentry{Block}
   % end group
