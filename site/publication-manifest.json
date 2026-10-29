@@ -69,7 +69,7 @@
    }
   }
  ],
- "built_utc": "2026-10-29T10:21:58+00:00",
+ "built_utc": "2026-10-29T15:16:25+00:00",
  "files": {
   "404.html": {
    "bytes": 15363,
@@ -440,32 +440,32 @@
    "sha256": "bf0c4316c5c784a51881e8e553d1a1dfa1aed2003b0f5e7734ccd5052fc26f3f"
   },
   "study/appendix.html": {
-   "bytes": 134032,
-   "sha256": "6fb8f2caaa6c98ab889983549e89d9ef5b4740795bdf11a8a306d0e312b107dc"
+   "bytes": 134019,
+   "sha256": "fd6f8aa9980e98cebcb3ee34a9a88254f69ab4cda130a6712652a8b54b0eb651"
   },
   "study/data/agreement.json": {
    "bytes": 493818,
    "sha256": "2fb2cfe4612c9fa538155caa25a44a9d9864001409e6611e13476e649d112c94"
   },
   "study/data/cells.json": {
-   "bytes": 479492,
-   "sha256": "eb9325e6266dcaf8f4b3f730ed3d1f8fb089bb5308709da3e636922e5d31d561"
+   "bytes": 479276,
+   "sha256": "8a6300bcdc9bc4b32e4defaf893d916715384889983498e5dbcd7f9e88d7630d"
   },
   "study/data/ecdf_iterations.json": {
    "bytes": 1924179,
    "sha256": "d2a7972b67e3cab8affdb26bd2fd4706f43a8d312d54eff153f0b21a2873959f"
   },
   "study/data/ecdf_runtime.json": {
-   "bytes": 3837836,
-   "sha256": "ad32a464ab26be263037c564ad9a9dfb8c173284e0d1fce0554a21b1123a8990"
+   "bytes": 3834704,
+   "sha256": "bd3fb16b51b6eaefa93672a83d41ed0d585583df042d70bb080f4d8c71d0df67"
   },
   "study/data/leader_pairs.json": {
    "bytes": 1901973,
    "sha256": "2be4dcc165c0547e47f5502890b8d5dcb6a02c13ffc07f5a74216f10e5001244"
   },
   "study/data/tasks.json": {
-   "bytes": 12052420,
-   "sha256": "d41fbc9d72d3ba97acdd38d6fec0cd776e9e7e0952bfeaf03ad207c33c2371a9"
+   "bytes": 12049180,
+   "sha256": "667176b7f6a2ec3a2d2ebbc5951a5973b46ef95a3ff85bfad54c593952d25597"
   },
   "study/data/tikz-index.json": {
    "bytes": 5254,
@@ -481,7 +481,7 @@
   },
   "study/downloads/knapsack-interdiction-continuous/instances.zip": {
    "bytes": 485562,
-   "sha256": "bc40339fc8ae6f63860950b02acd6713abf7bb4c6e474f215e091dd84e1f1d3f"
+   "sha256": "e3a865176f91a64a026b08232ce412491af8707956ed6390dcbfd6c5c3a5e666"
   },
   "study/downloads/knapsack-interdiction-continuous/overview.csv": {
    "bytes": 7694,
@@ -493,7 +493,7 @@
   },
   "study/downloads/knapsack-interdiction-integer/instances.zip": {
    "bytes": 498461,
-   "sha256": "57f09af69903fbac2bb04131708690ae44467472e48965047292ee3534d18658"
+   "sha256": "5225a0fc1f0ec14bcc9214159a589e7447479a811fdde9210454335f5419e9a2"
   },
   "study/downloads/knapsack-interdiction-integer/overview.csv": {
    "bytes": 8711,
@@ -505,7 +505,7 @@
   },
   "study/downloads/xu-wang-continuous/instances.zip": {
    "bytes": 2280021,
-   "sha256": "914a3ca5e6e0480d8ea89e440ec57d450b3957852279985e6b021209eddf8472"
+   "sha256": "df9d322822e77a9a207155763380f0084df73e82d5b056e670c3813a9be896d8"
   },
   "study/downloads/xu-wang-continuous/overview.csv": {
    "bytes": 4010,
@@ -517,7 +517,7 @@
   },
   "study/downloads/xu-wang-integer/instances.zip": {
    "bytes": 2289111,
-   "sha256": "9b907a41e3da2ff95119e16c8f01c7f3d34015047e2e0e3c14dbd975db8af571"
+   "sha256": "66c5fa6cf2f40c788183447a7900881e43b738339fb349a571b39dd62164cb23"
   },
   "study/downloads/xu-wang-integer/overview.csv": {
    "bytes": 4525,
@@ -528,16 +528,16 @@
    "sha256": "7ef8a9ef9008683277e3e57ce467833ad24349209f31457970fe7bb00ba4eac3"
   },
   "study/ecdf.html": {
-   "bytes": 42558,
-   "sha256": "44addfaf9a5a3f11e2affddada385362601c0e3accc5bc9f3cbce2585bee936d"
+   "bytes": 42545,
+   "sha256": "15e753883d60b65a85001eec323f58a46e0a02c5a3a21fd6db2a551542b53adc"
   },
   "study/explorer.html": {
    "bytes": 15508,
    "sha256": "fa04364ff6391709a28517f23bbe705ddd719de627357dfa7d0c0055ccf527ec"
   },
   "study/heatmaps.html": {
-   "bytes": 65138,
-   "sha256": "4abaeab74e2821a912dda450d709db8701e64efea973f3925321789571a7c059"
+   "bytes": 65123,
+   "sha256": "2cba25e423686c26d5fbcfbe689e550c49c8a754dc0f546a3f4283b5b2485676"
   },
   "study/index.html": {
    "bytes": 16748,
@@ -878,7 +878,7 @@
  },
  "indexable": false,
  "preview": false,
- "release_id": "2026-10-29.1",
+ "release_id": "2026-10-29.2",
  "schema_version": 1,
  "site_url": "https://simstevens.github.io/pwl-bilevel-numerical-study/",
  "target": "study",
